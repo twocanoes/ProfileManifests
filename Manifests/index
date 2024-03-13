@@ -883,11 +883,11 @@
 		<key>com.twocanoes.xcreds</key>
 		<dict>
 			<key>modified</key>
-			<date>2023-10-16T16:50:44Z</date>
+			<date>2024-01-29T16:50:44Z</date>
 			<key>path</key>
 			<string>Manifests/ManagedPreferencesApplications/com.twocanoes.xcreds.plist</string>
 			<key>version</key>
-			<integer>5</integer>
+			<integer>6</integer>
 		</dict>
 		<key>com.unity3d.UnityEditor5.x</key>
 		<dict>
@@ -928,11 +928,11 @@
 		<key>de.fau.rrze.NetworkShareMounter</key>
 		<dict>
 			<key>modified</key>
-			<date>2023-08-15T08:00:00Z</date>
+			<date>2024-02-26T13:10:00Z</date>
 			<key>path</key>
 			<string>Manifests/ManagedPreferencesApplications/de.fau.rrze.NetworkShareMounter.plist</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>edu.ncsu.confboard</key>
 		<dict>
@@ -964,20 +964,20 @@
 		<key>io.tailscale.ipn.macos</key>
 		<dict>
 			<key>modified</key>
-			<date>2024-01-23T08:00:00Z</date>
+			<date>2024-02-22T08:00:00Z</date>
 			<key>path</key>
 			<string>Manifests/ManagedPreferencesApplications/io.tailscale.ipn.macos.plist</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>4</integer>
 		</dict>
 		<key>io.tailscale.ipn.macsys</key>
 		<dict>
 			<key>modified</key>
-			<date>2024-01-23T08:00:00Z</date>
+			<date>2024-02-22T08:00:00Z</date>
 			<key>path</key>
 			<string>Manifests/ManagedPreferencesApplications/io.tailscale.ipn.macsys.plist</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>4</integer>
 		</dict>
 		<key>menu.nomad.NoMADPro</key>
 		<dict>
@@ -1429,11 +1429,11 @@
 		<key>com.apple.applicationaccess-iOS</key>
 		<dict>
 			<key>modified</key>
-			<date>2023-11-23T13:57:28Z</date>
+			<date>2024-01-16T11:32:53Z</date>
 			<key>path</key>
 			<string>Manifests/ManifestsApple/com.apple.applicationaccess-iOS.plist</string>
 			<key>version</key>
-			<integer>9</integer>
+			<integer>10</integer>
 		</dict>
 		<key>com.apple.applicationaccess-macOS</key>
 		<dict>
@@ -1609,7 +1609,7 @@
 		<key>com.apple.eas.account</key>
 		<dict>
 			<key>modified</key>
-			<date>2023-08-15T08:00:00Z</date>
+			<date>2024-01-30T15:23:48Z</date>
 			<key>path</key>
 			<string>Manifests/ManifestsApple/com.apple.eas.account.plist</string>
 			<key>version</key>
@@ -2050,7 +2050,7 @@
 		<key>com.apple.servicemanagement</key>
 		<dict>
 			<key>modified</key>
-			<date>2022-12-14T02:29:57Z</date>
+			<date>2023-12-21T11:15:29Z</date>
 			<key>path</key>
 			<string>Manifests/ManifestsApple/com.apple.servicemanagement.plist</string>
 			<key>version</key>
@@ -2194,7 +2194,7 @@
 		<key>com.apple.webClip.managed</key>
 		<dict>
 			<key>modified</key>
-			<date>2022-03-31T08:41:40Z</date>
+			<date>2024-01-30T12:59:18Z</date>
 			<key>path</key>
 			<string>Manifests/ManifestsApple/com.apple.webClip.managed.plist</string>
 			<key>version</key>
@@ -2247,6 +2247,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2024-01-29T13:22:27Z</date>
+	<date>2024-02-27T10:29:45Z</date>
 </dict>
 </plist>
