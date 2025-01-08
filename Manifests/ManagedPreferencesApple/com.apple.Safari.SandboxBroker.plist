@@ -144,7 +144,7 @@
 			<key>pfm_app_min</key>
 			<string>10.15</string>
 			<key>pfm_description</key>
-			<string>If enabled, sets &apos;File download location&apos; to &apos;Ask for each download&apos; (Settings &gt; General).</string>
+			<string>If enabled, sets 'File download location' to 'Ask for each download' (Settings &gt; General).</string>
 			<key>pfm_documentation_url</key>
 			<string>https://derflounder.wordpress.com/2024/10/17/setting-safari-to-always-prompt-for-download-location-on-macos-sequoia/</string>
 			<key>pfm_name</key>
