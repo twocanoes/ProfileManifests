@@ -142,7 +142,7 @@
 		</dict>
 		<dict>
 			<key>pfm_app_min</key>
-			<string>10.15</string>
+			<string>15.0</string>
 			<key>pfm_description</key>
 			<string>If enabled, sets 'File download location' to 'Ask for each download' (Settings &gt; General).</string>
 			<key>pfm_documentation_url</key>
