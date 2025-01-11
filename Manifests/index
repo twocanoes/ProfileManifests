@@ -475,6 +475,15 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<key>com.docker.config</key>
+		<dict>
+			<key>modified</key>
+			<date>2025-01-08T19:38:23Z</date>
+			<key>path</key>
+			<string>Manifests/ManagedPreferencesApplications/com.docker.config.plist</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<key>com.fxfactory.FxFactory</key>
 		<dict>
 			<key>modified</key>
@@ -2319,6 +2328,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-01-11T19:58:17Z</date>
+	<date>2025-01-11T20:10:00Z</date>
 </dict>
 </plist>
