@@ -329,6 +329,13 @@
 			<key>path</key>
 			<string>Icons/ManagedPreferencesApplications/com.google.santa.png</string>
 		</dict>
+		<key>com.grammarly.ProjectLlama</key>
+		<dict>
+			<key>hash</key>
+			<string>dd00051f20031d2287fbea0fe691ecff</string>
+			<key>path</key>
+			<string>Icons/ManagedPreferencesApplications/com.grammarly.ProjectLlama.png</string>
+		</dict>
 		<key>com.hjuutilainen.MunkiAdmin</key>
 		<dict>
 			<key>hash</key>
@@ -1482,6 +1489,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-01-10T23:30:45Z</date>
+	<date>2025-01-11T19:58:17Z</date>
 </dict>
 </plist>
