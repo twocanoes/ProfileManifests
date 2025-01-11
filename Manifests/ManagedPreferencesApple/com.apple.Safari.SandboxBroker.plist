@@ -141,7 +141,7 @@
 			<string>boolean</string>
 		</dict>
 		<dict>
-			<key>pfm_app_min</key>
+			<key>pfm_macos_min</key>
 			<string>15.0</string>
 			<key>pfm_description</key>
 			<string>If enabled, sets 'File download location' to 'Ask for each download' (Settings &gt; General).</string>
