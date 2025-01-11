@@ -192,8 +192,8 @@
 					</array>
 					<key>pfm_range_list_titles</key>
 					<array>
-						<string>0</string>
-						<string>1</string>
+						<string>Not Hidden</string>
+						<string>Hidden</string>
 					</array>
 					<key>pfm_title</key>
 					<string>Hide App UI On Launch</string>
@@ -218,8 +218,8 @@
 					</array>
 					<key>pfm_range_list_titles</key>
 					<array>
-						<string>0</string>
-						<string>1</string>
+						<string>Not Starting After Installation</string>
+						<string>Starting After Installation</string>
 					</array>
 					<key>pfm_title</key>
 					<string>Launch Tray</string>
@@ -256,8 +256,8 @@
 					</array>
 					<key>pfm_range_list_titles</key>
 					<array>
-						<string>0</string>
-						<string>1</string>
+						<string>Denies Internet Traffic before Enrollment</string>
+						<string>Allows Internet Traffic before Enrollment</string>
 					</array>
 					<key>pfm_title</key>
 					<string>Strict Enforcement</string>
