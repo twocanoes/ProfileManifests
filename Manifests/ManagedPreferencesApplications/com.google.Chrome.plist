@@ -15,7 +15,7 @@
 	<key>pfm_interaction</key>
 	<string>combined</string>
 	<key>pfm_last_modified</key>
-	<date>2024-09-04T15:50:02Z</date>
+	<date>2025-01-15T16:36:56Z</date>
 	<key>pfm_platforms</key>
 	<array>
 		<string>macOS</string>
@@ -8697,6 +8697,8 @@ If the page size is unavailable on the printer chosen by the user this policy is
 					<key>pfm_conditionals</key>
 					<array>
 						<dict>
+							<key>pfm_require</key>
+							<string>always</string>
 							<key>pfm_target_conditions</key>
 							<array>
 								<dict>
@@ -8736,6 +8738,8 @@ If the page size is unavailable on the printer chosen by the user this policy is
 							<key>pfm_conditionals</key>
 							<array>
 								<dict>
+									<key>pfm_require</key>
+									<string>always</string>
 									<key>pfm_target_conditions</key>
 									<array>
 										<dict>
@@ -8782,6 +8786,8 @@ If the page size is unavailable on the printer chosen by the user this policy is
 							<key>pfm_conditionals</key>
 							<array>
 								<dict>
+									<key>pfm_require</key>
+									<string>always</string>
 									<key>pfm_target_conditions</key>
 									<array>
 										<dict>

@@ -17,7 +17,7 @@
 	<key>pfm_ios_min</key>
 	<string>13.0</string>
 	<key>pfm_last_modified</key>
-	<date>2024-09-12T09:07:25Z</date>
+	<date>2025-01-15T16:36:56Z</date>
 	<key>pfm_macos_min</key>
 	<string>10.15</string>
 	<key>pfm_platforms</key>
@@ -225,6 +225,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_conditionals</key>
 			<array>
 				<dict>
+					<key>pfm_require</key>
+					<string>always</string>
 					<key>pfm_target_conditions</key>
 					<array>
 						<dict>
@@ -341,6 +343,8 @@ Hosts that begin with a "." are wildcard suffixes and will match all subdomains,
 			<key>pfm_conditionals</key>
 			<array>
 				<dict>
+					<key>pfm_require</key>
+					<string>always</string>
 					<key>pfm_target_conditions</key>
 					<array>
 						<dict>
@@ -469,6 +473,8 @@ The system:
 			<key>pfm_conditionals</key>
 			<array>
 				<dict>
+					<key>pfm_require</key>
+					<string>always</string>
 					<key>pfm_target_conditions</key>
 					<array>
 						<dict>
