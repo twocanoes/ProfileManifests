@@ -461,12 +461,12 @@
 			<string>5</string>
 		</dict>
 		<dict>
-			<key>pfm_documentation_url</key>
-			<string>https://github.com/Macjutsu/super/wiki/Dialog-Timeouts/3d44b40dc47dd940f5edda8bbabedfacbb79970b#restart-or-defer-dialog-timeout</string>
 			<key>pfm_app_max</key>
 			<string>4.0.3</string>
 			<key>pfm_description</key>
 			<string>Sets an automatic timeout for the restart or defer dialog in seconds</string>
+			<key>pfm_documentation_url</key>
+			<string>https://github.com/Macjutsu/super/wiki/Dialog-Timeouts/3d44b40dc47dd940f5edda8bbabedfacbb79970b#restart-or-defer-dialog-timeout</string>
 			<key>pfm_name</key>
 			<string>DialogTimeoutRestartOrDefer</string>
 			<key>pfm_note</key>
@@ -477,12 +477,12 @@
 			<string>string</string>
 		</dict>
 		<dict>
-			<key>pfm_documentation_url</key>
-			<string>https://github.com/Macjutsu/super/wiki/Alternate-Workflows/3d44b40dc47dd940f5edda8bbabedfacbb79970b#run-jamf-pro-policies</string>
 			<key>pfm_app_max</key>
 			<string>4.0.3</string>
 			<key>pfm_description</key>
 			<string>Make the super workflow run one or more Jamf Pro Policy Triggers that are comma separated with no spaces</string>
+			<key>pfm_documentation_url</key>
+			<string>https://github.com/Macjutsu/super/wiki/Alternate-Workflows/3d44b40dc47dd940f5edda8bbabedfacbb79970b#run-jamf-pro-policies</string>
 			<key>pfm_name</key>
 			<string>WorkflowJamfPolicyTriggers</string>
 			<key>pfm_title</key>
@@ -1123,12 +1123,12 @@
 			<string>https://sofa.example.domain.com/v1/macos_data_feed.json</string>
 		</dict>
 		<dict>
-			<key>pfm_documentation_url</key>
-			<string>https://github.com/Macjutsu/super/wiki/Dialog-Timeouts/3d44b40dc47dd940f5edda8bbabedfacbb79970b#restart-or-defer-dialog-timeout</string>
 			<key>pfm_app_min</key>
 			<string>4.0</string>
 			<key>pfm_description</key>
 			<string>Sets an automatic timeout for the restart or defer dialog in seconds</string>
+			<key>pfm_documentation_url</key>
+			<string>https://github.com/Macjutsu/super/wiki/Dialog-Timeouts/3d44b40dc47dd940f5edda8bbabedfacbb79970b#restart-or-defer-dialog-timeout</string>
 			<key>pfm_name</key>
 			<string>DialogTimeoutRestartOrDefer</string>
 			<key>pfm_note</key>
@@ -1189,8 +1189,6 @@
 		<dict>
 			<key>pfm_app_min</key>
 			<string>4.0</string>
-			<key>pfm_default</key>
-			<string>1440</string>
 			<key>pfm_description</key>
 			<string>The number of minutes to defer until the next update workflow attempt if a user choses not restart</string>
 			<key>pfm_documentation_url</key>
@@ -1201,12 +1199,12 @@
 			<string>Deferral Timer Default</string>
 			<key>pfm_type</key>
 			<string>string</string>
+			<key>pfm_value_placeholder</key>
+			<string>1440</string>
 		</dict>
 		<dict>
 			<key>pfm_app_min</key>
 			<string>4.0</string>
-			<key>pfm_default</key>
-			<string>1440</string>
 			<key>pfm_description</key>
 			<string>The number of minutes to defer if super detects an error in the workflow (for example, network or MDM connectivity issues)</string>
 			<key>pfm_documentation_url</key>
@@ -1217,12 +1215,12 @@
 			<string>Deferral Timer Error</string>
 			<key>pfm_type</key>
 			<string>string</string>
+			<key>pfm_value_placeholder</key>
+			<string>1440</string>
 		</dict>
 		<dict>
 			<key>pfm_app_min</key>
 			<string>4.0</string>
-			<key>pfm_default</key>
-			<string>120,1440,10080</string>
 			<key>pfm_description</key>
 			<string>Display a deferral time pop-up menu in the non-deadline restart dialog that allows the user to override the Deferral Timer Default timer</string>
 			<key>pfm_documentation_url</key>
@@ -1233,12 +1231,12 @@
 			<string>Deferral Timer Menu</string>
 			<key>pfm_type</key>
 			<string>string</string>
+			<key>pfm_value_placeholder</key>
+			<string>120,1440,10080</string>
 		</dict>
 		<dict>
 			<key>pfm_app_min</key>
 			<string>4.0</string>
-			<key>pfm_default</key>
-			<string>1440</string>
 			<key>pfm_description</key>
 			<string>The number of minutes to defer if no software updates are available or allowed. Enabling this option results in super acting as a permanent agent that checks for software updates on a regular basis</string>
 			<key>pfm_documentation_url</key>
@@ -1249,6 +1247,8 @@
 			<string>Deferral Timer Workflow Relaunch</string>
 			<key>pfm_type</key>
 			<string>string</string>
+			<key>pfm_value_placeholder</key>
+			<string>1440</string>
 		</dict>
 		<dict>
 			<key>pfm_app_min</key>
@@ -1269,8 +1269,6 @@
 		<dict>
 			<key>pfm_app_min</key>
 			<string>4.0</string>
-			<key>pfm_default</key>
-			<string>ALWAYS</string>
 			<key>pfm_description</key>
 			<string>Display super notifications in the center of the screen</string>
 			<key>pfm_documentation_url</key>
@@ -1319,8 +1317,6 @@
 		<dict>
 			<key>pfm_app_min</key>
 			<string>4.0</string>
-			<key>pfm_default</key>
-			<string>https://support.apple.com/en-us/HT201222</string>
 			<key>pfm_description</key>
 			<string>A plain text string or URL to open when the user clicks the warning button (exclamation mark icon) in all interactive dialogs (but not notifications)</string>
 			<key>pfm_documentation_url</key>
@@ -1331,6 +1327,8 @@
 			<string>Display Warning Button String</string>
 			<key>pfm_type</key>
 			<string>string</string>
+			<key>pfm_value_placeholder</key>
+			<string>https://support.apple.com/en-us/HT201222</string>
 		</dict>
 		<dict>
 			<key>pfm_app_min</key>
@@ -1381,8 +1379,6 @@
 		<dict>
 			<key>pfm_app_min</key>
 			<string>4.0</string>
-			<key>pfm_default</key>
-			<string>14</string>
 			<key>pfm_description</key>
 			<string>Limit the installation of macOS major upgrade versions to the major (whole number) version specified in this option. This option requires that you have also specified the InstallMacOSMajorUpgrades option</string>
 			<key>pfm_documentation_url</key>
@@ -1393,6 +1389,8 @@
 			<string>Install MacOS Major Version Target</string>
 			<key>pfm_type</key>
 			<string>string</string>
+			<key>pfm_value_placeholder</key>
+			<string>14</string>
 		</dict>
 		<dict>
 			<key>pfm_app_min</key>
