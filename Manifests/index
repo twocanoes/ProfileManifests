@@ -43,11 +43,11 @@
 		<key>com.apple.Safari.SandboxBroker</key>
 		<dict>
 			<key>modified</key>
-			<date>2023-08-15T08:00:00Z</date>
+			<date>2025-01-06T19:50:20Z</date>
 			<key>path</key>
 			<string>Manifests/ManagedPreferencesApple/com.apple.Safari.SandboxBroker.plist</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>com.apple.Siri</key>
 		<dict>
@@ -2346,6 +2346,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-01-17T23:12:34Z</date>
+	<date>2025-01-17T23:14:39Z</date>
 </dict>
 </plist>
