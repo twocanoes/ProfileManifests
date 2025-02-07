@@ -400,6 +400,22 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>string</string>
 		</dict>
 		<dict>
+            <key>pfm_app_min</key>
+			<string>1.80</string>
+			<key>pfm_description</key>
+			<string>The Hostname policy allows IT administrators to override the hostname configured in the operating system and reported to the coordination server. This can be particularly useful on mobile devices, where the hostname provided by the operating system usually only contains the device's manufacturer name and model.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/kb/1315/mdm-keys#set-whether-device-hostnames-can-be-modified</string>
+			<key>pfm_name</key>
+			<string>Hostname</string>
+			<key>pfm_title</key>
+			<string>Set whether device hostnames can be modified</string>
+			<key>pfm_type</key>
+			<string>string</string>
+			<key>pfm_value_placeholder</key>
+			<string>users-macbook-pro</string>
+		</dict>
+		<dict>
 			<key>pfm_app_min</key>
 			<string>1.56</string>
 			<key>pfm_default</key>
