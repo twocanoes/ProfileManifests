@@ -112,6 +112,15 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<key>com.apple.dt.Xcode</key>
+		<dict>
+			<key>modified</key>
+			<date>2025-01-27T01:01:44Z</date>
+			<key>path</key>
+			<string>Manifests/ManagedPreferencesApple/com.apple.dt.Xcode.plist</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<key>com.apple.finder</key>
 		<dict>
 			<key>modified</key>
@@ -2355,6 +2364,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-02-04T17:16:36Z</date>
+	<date>2025-02-14T11:15:59Z</date>
 </dict>
 </plist>

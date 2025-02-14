@@ -46,6 +46,13 @@
 			<key>path</key>
 			<string>Icons/ManagedPreferencesApple/com.apple.TimeMachine.png</string>
 		</dict>
+		<key>com.apple.dt.Xcode</key>
+		<dict>
+			<key>hash</key>
+			<string>568946afec7773f3d6c0187d83357b64</string>
+			<key>path</key>
+			<string>Icons/ManagedPreferencesApple/com.apple.dt.Xcode.png</string>
+		</dict>
 		<key>com.apple.finder</key>
 		<dict>
 			<key>hash</key>
@@ -1510,6 +1517,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-02-04T17:16:36Z</date>
+	<date>2025-02-14T11:15:59Z</date>
 </dict>
 </plist>
