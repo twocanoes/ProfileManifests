@@ -560,6 +560,13 @@
 			<key>path</key>
 			<string>Icons/ManagedPreferencesApplications/com.microsoft.wdav.png</string>
 		</dict>
+		<key>com.northpolesec.santa</key>
+		<dict>
+			<key>hash</key>
+			<string>2121b19796cc9342602853f7d5f9f341</string>
+			<key>path</key>
+			<string>Icons/ManagedPreferencesApplications/com.northpolesec.santa.png</string>
+		</dict>
 		<key>com.papercut.printdeploy.client</key>
 		<dict>
 			<key>hash</key>
@@ -1517,6 +1524,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-02-14T11:15:59Z</date>
+	<date>2025-02-14T12:30:18Z</date>
 </dict>
 </plist>
