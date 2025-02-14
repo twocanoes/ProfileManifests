@@ -598,7 +598,7 @@
 		<key>com.secondsonconsulting.renew</key>
 		<dict>
 			<key>hash</key>
-			<string>ed5a43a14aa821fb67aeb6c1d1f03e80</string>
+			<string>d13d3cae4e07554257681e2f3ffbc9e8</string>
 			<key>path</key>
 			<string>Icons/ManagedPreferencesApplications/com.secondsonconsulting.renew.png</string>
 		</dict>
@@ -1524,6 +1524,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-02-14T12:30:18Z</date>
+	<date>2025-02-14T12:34:19Z</date>
 </dict>
 </plist>
