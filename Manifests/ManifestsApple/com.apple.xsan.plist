@@ -11,7 +11,7 @@
 	<key>pfm_interaction</key>
 	<string>exclusive</string>
 	<key>pfm_last_modified</key>
-	<date>2025-03-03T10:07:48Z</date>
+	<date>2025-03-03T11:08:08Z</date>
 	<key>pfm_macos_min</key>
 	<string>10.10</string>
 	<key>pfm_platforms</key>
@@ -134,8 +134,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 		</dict>
 		<dict>
 			<key>pfm_description</key>
-			<string>An array of storage area network (SAN) File System Name Server coordinators. The list should contain the same addresses in the same order as the metadata controller (MDC) '/Library/Preferences/Xsan/fsnameservers' file.  Xsan SAN clients automatically receive updates to the 'fsnameservers' list from the SAN configuration servers whenever this list changes. StorNext administrators should update their profile whenever the 'fsnameservers' list changes.
-This key is required for StorNext SANs.</string>
+			<string>This key is required for StorNext SANs. This array contains one string value for each of the SAN's File System Name Server coordinators. The list should contain the same addresses in the same order as the MDC's /Library/Preferences/Xsan/fsnameservers file.</string>
 			<key>pfm_name</key>
 			<string>fsnameservers</string>
 			<key>pfm_require</key>
@@ -144,7 +143,7 @@ This key is required for StorNext SANs.</string>
 			<array>
 				<dict>
 					<key>pfm_description</key>
-					<string>The IP address or fully qualified domain name (FQDN) of an Xsan file server.</string>
+					<string>A name server.</string>
 					<key>pfm_name</key>
 					<string>fsnameserversItem</string>
 					<key>pfm_require</key>
@@ -213,7 +212,7 @@ Only one value is accepted: 'auth_secret'</string>
 		</dict>
 		<dict>
 			<key>pfm_description</key>
-			<string>An array of LDAP URLs where Xsan systems can obtain SAN configuration updates. This key is required for all Xsan SANs. There should be one entry for each Xsan MDC.
+			<string>This key is required for all Xsan SANs. Each string in this array contains an LDAP URL where Xsan systems can obtain SAN configuration updates. There should be one entry for each Xsan MDC.
 Example URL: 'ldaps://mdc1.example.com:389'.</string>
 			<key>pfm_name</key>
 			<string>sanConfigURLs</string>

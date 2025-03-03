@@ -17,7 +17,7 @@
 	<key>pfm_ios_min</key>
 	<string>13.0</string>
 	<key>pfm_last_modified</key>
-	<date>2025-03-03T10:07:48Z</date>
+	<date>2025-03-03T11:08:08Z</date>
 	<key>pfm_macos_min</key>
 	<string>10.15</string>
 	<key>pfm_platforms</key>
@@ -2566,6 +2566,18 @@ kerberosDefault - The default Kerberos processes for selecting credentials is us
 					<key>pfm_type</key>
 					<string>array</string>
 				</dict>
+				<dict>
+					<key>pfm_default</key>
+					<false/>
+					<key>pfm_description</key>
+					<string>If set to true, the device UDID and serial number will be included in Platform SSO attestations.</string>
+					<key>pfm_macos_min</key>
+					<string>15.4</string>
+					<key>pfm_name</key>
+					<string>AllowDeviceIdentifiersInAttestation</string>
+					<key>pfm_type</key>
+					<string>boolean</string>
+				</dict>
 			</array>
 			<key>pfm_type</key>
 			<string>dictionary</string>
@@ -2619,6 +2631,6 @@ kerberosDefault - The default Kerberos processes for selecting credentials is us
 	<key>pfm_user_approved</key>
 	<true/>
 	<key>pfm_version</key>
-	<integer>7</integer>
+	<integer>8</integer>
 </dict>
 </plist>

@@ -15,7 +15,9 @@ The Identification payload is not supported in iOS.</string>
 	<key>pfm_interaction</key>
 	<string>exclusive</string>
 	<key>pfm_last_modified</key>
-	<date>2025-03-03T10:07:48Z</date>
+	<date>2025-03-03T11:08:08Z</date>
+	<key>pfm_macos_deprecated</key>
+	<string>15.4</string>
 	<key>pfm_macos_min</key>
 	<string>10.7</string>
 	<key>pfm_platforms</key>

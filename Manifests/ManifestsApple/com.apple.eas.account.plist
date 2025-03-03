@@ -17,7 +17,7 @@
 	<key>pfm_ios_min</key>
 	<string>4.0</string>
 	<key>pfm_last_modified</key>
-	<date>2025-03-03T10:07:48Z</date>
+	<date>2025-03-03T11:08:08Z</date>
 	<key>pfm_note</key>
 	<string>As with VPN and Wi-Fi configurations, it is possible to associate an SCEP credential with an Exchange configu- ration via the PayloadCertificateUUID key.</string>
 	<key>pfm_platforms</key>
@@ -194,8 +194,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 		</dict>
 		<dict>
 			<key>pfm_description</key>
-			<string>The Exchange server host name or IP address.
-If using OAuth without an OAuthSignInURL, the host name is ignored.</string>
+			<string>The Exchange server host name or IP address.</string>
 			<key>pfm_name</key>
 			<string>Host</string>
 			<key>pfm_require</key>
