@@ -11,7 +11,7 @@
 	<key>pfm_format_version</key>
 	<integer>1</integer>
 	<key>pfm_last_modified</key>
-	<date>2025-03-26T10:47:05Z</date>
+	<date>2025-03-26T10:53:01Z</date>
 	<key>pfm_platforms</key>
 	<array>
 		<string>macOS</string>
@@ -251,7 +251,7 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_default</key>
 			<integer>1</integer>
 			<key>pfm_description</key>
-			<string>If enabled, a language switcher pops up next to the text cursor throughout the system when the user is editing text.</string>
+			<string>If enabled, a language indicator pops up next to the text cursor throughout the system when the user is editing text.</string>
 			<key>pfm_macos_min</key>
 			<string>14.0</string>
 			<key>pfm_name</key>
