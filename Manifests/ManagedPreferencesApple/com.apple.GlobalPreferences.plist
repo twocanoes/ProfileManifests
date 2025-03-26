@@ -241,7 +241,7 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_name</key>
 			<string>AppleShowAllExtensions</string>
 			<key>pfm_note</key>
-			<string>This can avoid the accidental opening of nafarious files from Finder that say they are one type but are in fact another.</string>
+			<string>This can avoid the accidental opening of nefarious files from Finder that say they are one type but are in fact another.</string>
 			<key>pfm_title</key>
 			<string>Show all filename extensions</string>
 			<key>pfm_type</key>
