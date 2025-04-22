@@ -689,7 +689,7 @@
 		<key>corp.sap.privileges</key>
 		<dict>
 			<key>hash</key>
-			<string>e073ebafb207b69b1c41e675081a26b3</string>
+			<string>e44e0b1fbfc3e36bc0607369705f3f5e</string>
 			<key>path</key>
 			<string>Icons/ManagedPreferencesApplications/corp.sap.privileges.png</string>
 		</dict>
@@ -1538,6 +1538,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-04-07T17:02:27Z</date>
+	<date>2025-04-22T19:27:50Z</date>
 </dict>
 </plist>
