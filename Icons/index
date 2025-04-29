@@ -280,6 +280,13 @@
 			<key>path</key>
 			<string>Icons/ManagedPreferencesApplications/com.crowdstrike.falcon.png</string>
 		</dict>
+		<key>com.dare.zappl</key>
+		<dict>
+			<key>hash</key>
+			<string>1460392e387160d72e9d4e2374dfe73b</string>
+			<key>path</key>
+			<string>Icons/ManagedPreferencesApplications/com.dare.zappl.png</string>
+		</dict>
 		<key>com.docker.config</key>
 		<dict>
 			<key>hash</key>
@@ -1538,6 +1545,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-04-22T19:27:50Z</date>
+	<date>2025-04-29T10:00:11Z</date>
 </dict>
 </plist>

@@ -484,6 +484,15 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<key>com.dare.zappl.preferences</key>
+		<dict>
+			<key>modified</key>
+			<date>2025-04-25T15:30:48Z</date>
+			<key>path</key>
+			<string>Manifests/ManagedPreferencesApplications/com.dare.zappl.plist</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<key>com.docker.config</key>
 		<dict>
 			<key>modified</key>
@@ -2391,6 +2400,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-04-22T19:27:50Z</date>
+	<date>2025-04-29T10:00:11Z</date>
 </dict>
 </plist>
