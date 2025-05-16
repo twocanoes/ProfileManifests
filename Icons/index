@@ -819,6 +819,13 @@
 			<key>path</key>
 			<string>Icons/ManagedPreferencesApplications/us.zoom.config.png</string>
 		</dict>
+		<key>xyz.techitout.appAutoPatch</key>
+		<dict>
+			<key>hash</key>
+			<string>83b95c01ac58055f30258269cede421f</string>
+			<key>path</key>
+			<string>Icons/ManagedPreferencesApplications/xyz.techitout.appAutoPatch.png</string>
+		</dict>
 	</dict>
 	<key>ManifestsApple</key>
 	<dict>
@@ -1545,6 +1552,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-05-09T19:20:36Z</date>
+	<date>2025-05-16T10:15:39Z</date>
 </dict>
 </plist>
