@@ -1087,6 +1087,15 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<key>dev.firezone.firezone</key>
+		<dict>
+			<key>modified</key>
+			<date>2025-05-23T07:58:48Z</date>
+			<key>path</key>
+			<string>Manifests/ManagedPreferencesApplications/dev.firezone.firezone.plist</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<key>edu.ncsu.confboard</key>
 		<dict>
 			<key>modified</key>
@@ -2409,6 +2418,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-05-22T08:24:59Z</date>
+	<date>2025-05-26T14:46:15Z</date>
 </dict>
 </plist>
