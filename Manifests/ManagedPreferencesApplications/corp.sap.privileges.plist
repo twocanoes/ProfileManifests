@@ -13,7 +13,7 @@
 	<key>pfm_format_version</key>
 	<integer>1</integer>
 	<key>pfm_last_modified</key>
-	<date>2025-06-30T14:30:53Z</date>
+	<date>2025-08-25T11:45:50Z</date>
 	<key>pfm_macos_min</key>
 	<string>10.12</string>
 	<key>pfm_platforms</key>
@@ -821,12 +821,16 @@ A profile can consist of payloads with different version numbers. For example, c
 					<string>string</string>
 				</dict>
 				<dict>
+					<key>pfm_app_deprecated</key>
+					<string>2.0.0</string>
+					<key>pfm_app_max</key>
+					<string>1.5.4</string>
 					<key>pfm_app_min</key>
 					<string>1.5.0</string>
 					<key>pfm_default</key>
 					<false/>
 					<key>pfm_description</key>
-					<string>If set to true, the log messages are sent via TCP instead of UDP. By default, messages are sent via UDP. Deprecated as of v2.0</string>
+					<string>If set to true, the log messages are sent via TCP instead of UDP. By default, messages are sent via UDP.</string>
 					<key>pfm_name</key>
 					<string>EnableTCP</string>
 					<key>pfm_title</key>
