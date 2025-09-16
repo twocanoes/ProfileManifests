@@ -714,12 +714,26 @@
 			<key>path</key>
 			<string>Icons/ManagedPreferencesApplications/de.fau.rrze.NetworkShareMounter.png</string>
 		</dict>
+		<key>dev.firezone.firezone</key>
+		<dict>
+			<key>hash</key>
+			<string>11fe3f94e6e55da26d3821e38660a58c</string>
+			<key>path</key>
+			<string>Icons/ManagedPreferencesApplications/dev.firezone.firezone.png</string>
+		</dict>
 		<key>fr.handbrake.HandBrake</key>
 		<dict>
 			<key>hash</key>
 			<string>adc42d6f928b3be696bf0739ea9dfa04</string>
 			<key>path</key>
 			<string>Icons/ManagedPreferencesApplications/fr.handbrake.HandBrake.png</string>
+		</dict>
+		<key>io.macadmins.Outset</key>
+		<dict>
+			<key>hash</key>
+			<string>145257bc26fc8fc22ab4ddff84f727ba</string>
+			<key>path</key>
+			<string>Icons/ManagedPreferencesApplications/io.macadmins.Outset.png</string>
 		</dict>
 		<key>io.tailscale.ipn.macos</key>
 		<dict>
@@ -1552,6 +1566,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2025-05-22T08:24:59Z</date>
+	<date>2025-09-15T18:08:23Z</date>
 </dict>
 </plist>

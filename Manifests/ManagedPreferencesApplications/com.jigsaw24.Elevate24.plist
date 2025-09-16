@@ -7,7 +7,7 @@
 	<key>pfm_description</key>
 	<string>macOS privilege access management tool from Jigsaw24</string>
 	<key>pfm_documentation_url</key>
-	<string>https://github.com/Jigsaw24/Elevate24/tree/main</string>
+	<string>https://docs.jigsaw24.com/Elevate24/</string>
 	<key>pfm_domain</key>
 	<string>com.jigsaw24.Elevate24</string>
 	<key>pfm_format_version</key>
@@ -113,7 +113,7 @@
 	RK5CYII=
 	</data>
 	<key>pfm_last_modified</key>
-	<date>2025-03-20T14:56:33Z</date>
+	<date>2025-09-11T12:00:00Z</date>
 	<key>pfm_platforms</key>
 	<array>
 		<string>macOS</string>
@@ -266,8 +266,6 @@ During a profile replacement, the system updates payloads with the same 'Payload
 					<string>siemAuthHeader</string>
 					<string>siemAuthToken</string>
 					<string>microsoftsentinel</string>
-					<string>teamswebhook</string>
-					<string>slack-webhook</string>
 				</array>
 				<key>Secondary Account (Premium)</key>
 				<array>
@@ -283,6 +281,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 				</array>
 				<key>Security Settings</key>
 				<array>
+					<string>UseSystemExtension</string>
+					<string>EnableSessionMonitoring</string>
 					<string>enableAppleAuth</string>
 					<string>GoogleAuth</string>
 					<string>standardAtLoad</string>
@@ -290,7 +290,6 @@ During a profile replacement, the system updates payloads with the same 'Payload
 					<string>demoteAllAdminQuit</string>
 					<string>killterminalsessions</string>
 					<string>demoteExclusions</string>
-					<string>EnableSessionMonitoring</string>
 				</array>
 				<key>Time and Reason</key>
 				<array>
@@ -309,7 +308,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Enter your Elevate24 license key. Mandatory key for Premium customers only.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#license-configuration</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/2%20Elevate24%20-%20Licensing.html#licensing</string>
 			<key>pfm_name</key>
 			<string>LicenseKey</string>
 			<key>pfm_title</key>
@@ -323,7 +322,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Enter your Elevate24 license api key. Mandatory key for Premium customers only.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#license-configuration</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/2%20Elevate24%20-%20Licensing.html#licensing</string>
 			<key>pfm_name</key>
 			<string>LicenseAPIKey</string>
 			<key>pfm_title</key>
@@ -337,9 +336,9 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_default</key>
 			<false/>
 			<key>pfm_description</key>
-			<string>Change Elevate24 to show to the new UI. The new UI will be default in a later version of Elevate24.</string>
+			<string>Change Elevate24 to show to the new UI. Not required for Elevate24 2.3+ as this is now default.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#elevated-session-customisation</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/3%20Elevate24%20-%20Branding.html#branding</string>
 			<key>pfm_name</key>
 			<string>newUI</string>
 			<key>pfm_title</key>
@@ -353,7 +352,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Change the standard application message in the application.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#branding</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/3%20Elevate24%20-%20Branding.html#branding</string>
 			<key>pfm_name</key>
 			<string>message</string>
 			<key>pfm_title</key>
@@ -369,7 +368,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Prodvide the file path to a JPEG or PNG to use as the icon in the Elevate24 application.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#branding</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/3%20Elevate24%20-%20Branding.html#branding</string>
 			<key>pfm_name</key>
 			<string>iconPath</string>
 			<key>pfm_title</key>
@@ -385,7 +384,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Change the standard header from Elevate24 in the application. Always displays in bold.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#branding</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/3%20Elevate24%20-%20Branding.html#branding</string>
 			<key>pfm_name</key>
 			<string>heading</string>
 			<key>pfm_title</key>
@@ -401,7 +400,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Change the standard text "Privilege Access Management" under the Elevate24 header. New UI V2.2.0+ Only.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#branding</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/3%20Elevate24%20-%20Branding.html#branding</string>
 			<key>pfm_name</key>
 			<string>subheading</string>
 			<key>pfm_title</key>
@@ -417,7 +416,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Change the standard button text from Elevate in the application. </string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#branding</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/3%20Elevate24%20-%20Branding.html#branding</string>
 			<key>pfm_name</key>
 			<string>mainbutton</string>
 			<key>pfm_title</key>
@@ -433,7 +432,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Hide the “Powered by Jigsaw24” logo in the application.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#branding</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/3%20Elevate24%20-%20Branding.html#branding</string>
 			<key>pfm_name</key>
 			<string>HideLogo</string>
 			<key>pfm_title</key>
@@ -447,7 +446,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Enables the option for the application to display a choice of times. To be used in conjuction with Session Times list.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#elevated-session-customisation</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/4%20Elevate24%20-%20Customisation.html#session-customisation</string>
 			<key>pfm_name</key>
 			<string>Enabletimelist</string>
 			<key>pfm_title</key>
@@ -461,7 +460,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Will replace reasons drop down list with a free text entry box. </string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#elevated-session-customisation</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/4%20Elevate24%20-%20Customisation.html#session-customisation</string>
 			<key>pfm_name</key>
 			<string>enableReason</string>
 			<key>pfm_title</key>
@@ -475,7 +474,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Change the length of time (in seconds) the user will be elevated for. Do not use this key if you want to present a list of times to choose from.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#elevated-session-customisation</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/4%20Elevate24%20-%20Customisation.html#session-customisation</string>
 			<key>pfm_name</key>
 			<string>Sessiontime</string>
 			<key>pfm_title</key>
@@ -495,7 +494,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>List of available times to chose from in the Application. Enter time below in seconds.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#elevated-session-customisation</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/4%20Elevate24%20-%20Customisation.html#session-customisation</string>
 			<key>pfm_name</key>
 			<string>times</string>
 			<key>pfm_subkeys</key>
@@ -514,7 +513,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>The reasons to choose for needing elevated rights in dropbox within the application.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#elevated-session-customisation</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/4%20Elevate24%20-%20Customisation.html#session-customisation</string>
 			<key>pfm_name</key>
 			<string>reasons</string>
 			<key>pfm_subkeys</key>
@@ -535,7 +534,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Set the number of minutes before the application notifies the user that the session is expiring</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#elevated-session-customisation</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/4%20Elevate24%20-%20Customisation.html#session-customisation</string>
 			<key>pfm_name</key>
 			<string>sessionExpiryReminder</string>
 			<key>pfm_title</key>
@@ -551,7 +550,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>To disable sending of premium reporting data to Jigsaw24. If you are a basic customer, no data is sent from the device, it is all stored locally.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Reporting%20Configuration%20Keys.md#disable-sending-data-to-jigsaw24</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Reporting/2%20Elevate24%20-%20App%20Reporting%20Configuration%20Keys.html#disable-sending-data-to-jigsaw24</string>
 			<key>pfm_name</key>
 			<string>DisableDefaultLog</string>
 			<key>pfm_title</key>
@@ -563,7 +562,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string></string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Reporting%20Configuration%20Keys.md#reporting-configuration-keys-for-elevate24</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Reporting/2%20Elevate24%20-%20App%20Reporting%20Configuration%20Keys.html#elevate24-application-level-reporting-configuration-keys</string>
 			<key>pfm_name</key>
 			<string>siemURL</string>
 			<key>pfm_title</key>
@@ -575,7 +574,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string></string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Reporting%20Configuration%20Keys.md#reporting-configuration-keys-for-elevate24</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Reporting/2%20Elevate24%20-%20App%20Reporting%20Configuration%20Keys.html#elevate24-application-level-reporting-configuration-keys</string>
 			<key>pfm_name</key>
 			<string>siemAuthHeader</string>
 			<key>pfm_title</key>
@@ -587,7 +586,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string></string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Reporting%20Configuration%20Keys.md#reporting-configuration-keys-for-elevate24</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Reporting/2%20Elevate24%20-%20App%20Reporting%20Configuration%20Keys.html#elevate24-application-level-reporting-configuration-keys</string>
 			<key>pfm_name</key>
 			<string>siemAuthToken</string>
 			<key>pfm_title</key>
@@ -597,7 +596,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 		</dict>
 		<dict>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Reporting%20Configuration%20Keys.md#microsoft-sentinel</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Reporting/2%20Elevate24%20-%20App%20Reporting%20Configuration%20Keys.html#elevate24-application-level-reporting-configuration-keys</string>
 			<key>pfm_name</key>
 			<string>microsoftsentinel</string>
 			<key>pfm_subkeys</key>
@@ -650,36 +649,12 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<string>array</string>
 		</dict>
 		<dict>
-			<key>pfm_description</key>
-			<string></string>
-			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Reporting%20Configuration%20Keys.md#reporting-configuration-keys-for-elevate24</string>
-			<key>pfm_name</key>
-			<string>teamswebhook</string>
-			<key>pfm_title</key>
-			<string>Teams Webhook (Premium)</string>
-			<key>pfm_type</key>
-			<string>string</string>
-		</dict>
-		<dict>
-			<key>pfm_description</key>
-			<string></string>
-			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Reporting%20Configuration%20Keys.md#reporting-configuration-keys-for-elevate24</string>
-			<key>pfm_name</key>
-			<string>slack-webhook</string>
-			<key>pfm_title</key>
-			<string>Slack Webhook (Premium)</string>
-			<key>pfm_type</key>
-			<string>string</string>
-		</dict>
-		<dict>
 			<key>pfm_default</key>
 			<false/>
 			<key>pfm_description</key>
 			<string>To enable monitoring of administrator activities whilst in an elevated state.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20Session%20Reporting%20-%20Configuration%20Keys.md#configuration-keys-for-elevate24-session-reporting</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/6%20Elevate24%20-%20Security%20Settings.html</string>
 			<key>pfm_name</key>
 			<string>EnableSessionMonitoring</string>
 			<key>pfm_title</key>
@@ -693,7 +668,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Prompts the user for their local Apple credentials or TouchID (if enabled on device) before allowing elevation.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#security-settings</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/6%20Elevate24%20-%20Security%20Settings.html</string>
 			<key>pfm_name</key>
 			<string>enableAppleAuth</string>
 			<key>pfm_title</key>
@@ -707,7 +682,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Enables the use of authenticator applications such as Google Auth or Microsoft Auth, prompting for a valid session token before Elevating to admin.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#security-settings</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/6%20Elevate24%20-%20Security%20Settings.html</string>
 			<key>pfm_name</key>
 			<string>GoogleAuth</string>
 			<key>pfm_title</key>
@@ -721,7 +696,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Will remove admin rights when the application first launches.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#security-settings</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/6%20Elevate24%20-%20Security%20Settings.html#security-settings</string>
 			<key>pfm_name</key>
 			<string>standardAtLoad</string>
 			<key>pfm_title</key>
@@ -735,7 +710,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Enables all admin users being demoted to standard users when the current elevation period ends. If you have any accounts on the device you'd like to remain admin please configure Demote Exclusions.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#security-settings</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/6%20Elevate24%20-%20Security%20Settings.html#security-settings</string>
 			<key>pfm_name</key>
 			<string>demoteAllAdmin</string>
 			<key>pfm_title</key>
@@ -749,7 +724,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Will demote all admin accounts from admin when the application quits or the laptop is restarted.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#security-settings</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/6%20Elevate24%20-%20Security%20Settings.html#security-settings</string>
 			<key>pfm_name</key>
 			<string>demoteAllAdminQuit</string>
 			<key>pfm_title</key>
@@ -761,7 +736,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Will exclude accounts on device from being demoted.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#security-settings</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/6%20Elevate24%20-%20Security%20Settings.html#security-settings</string>
 			<key>pfm_name</key>
 			<string>demoteExclusions</string>
 			<key>pfm_subkeys</key>
@@ -782,7 +757,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Will demote the current terminal session from sudo session to standard.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#security-settings</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/6%20Elevate24%20-%20Security%20Settings.html#security-settings</string>
 			<key>pfm_name</key>
 			<string>killterminalsessions</string>
 			<key>pfm_title</key>
@@ -794,9 +769,23 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_default</key>
 			<false/>
 			<key>pfm_description</key>
+			<string>Elevate24 v2.3+ Only. To ensure the Application is protected by the on-device system extension, to prevent misuse and tampering.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/6%20Elevate24%20-%20Security%20Settings.html#security-settings</string>
+			<key>pfm_name</key>
+			<string>UseSystemExtension</string>
+			<key>pfm_title</key>
+			<string>System Extension</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
 			<string>Will create a temporary secondary account instead of Elevating the primary account. A temporary password will also be supplied upon elevation.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#security-settings</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/5%20Elevate24%20-%20Secondary%20Account.html</string>
 			<key>pfm_name</key>
 			<string>userElevateAdmin</string>
 			<key>pfm_title</key>
@@ -810,7 +799,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>If User Elevate Admin Key is enabled and this key is also enabled, the temporary account will use the current logged in users username as part of the account naming. For example, Joe.Bloggs-adm</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#secondary-account-configuration</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/5%20Elevate24%20-%20Secondary%20Account.html#secondary-account-configuration</string>
 			<key>pfm_name</key>
 			<string>useCurrentUserAsAdmin</string>
 			<key>pfm_title</key>
@@ -822,7 +811,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>If ‘Use Current User As Admin’ is not enabled, this key allows the ability to create a temporary admin account with a standard name. Such as "Temp Admin"</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#secondary-account-configuration</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/5%20Elevate24%20-%20Secondary%20Account.html#secondary-account-configuration</string>
 			<key>pfm_name</key>
 			<string>adminUserName</string>
 			<key>pfm_title</key>
@@ -836,7 +825,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Enables the use of a custom complex password when 'User Elevate Admin' is enabled.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#secondary-account-configuration</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/5%20Elevate24%20-%20Secondary%20Account.html#secondary-account-configuration</string>
 			<key>pfm_name</key>
 			<string>ComplexPassword</string>
 			<key>pfm_title</key>
@@ -848,7 +837,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Enter the amount of uppercase Letters required for the password.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#secondary-account-configuration</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/5%20Elevate24%20-%20Secondary%20Account.html#secondary-account-configuration</string>
 			<key>pfm_name</key>
 			<string>PasswordUppercase</string>
 			<key>pfm_title</key>
@@ -862,7 +851,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Enter the amount of lowercase Letters required for the password.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#secondary-account-configuration</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/5%20Elevate24%20-%20Secondary%20Account.html#secondary-account-configuration</string>
 			<key>pfm_name</key>
 			<string>PasswordLowercase</string>
 			<key>pfm_title</key>
@@ -876,7 +865,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Enter the amount of numbers required for the password.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#secondary-account-configuration</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/5%20Elevate24%20-%20Secondary%20Account.html#secondary-account-configuration</string>
 			<key>pfm_name</key>
 			<string>PasswordNumbers</string>
 			<key>pfm_title</key>
@@ -890,7 +879,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Enter the amount of symbols required for the password.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#secondary-account-configuration</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/5%20Elevate24%20-%20Secondary%20Account.html#secondary-account-configuration</string>
 			<key>pfm_name</key>
 			<string>PasswordSymbols</string>
 			<key>pfm_title</key>
@@ -906,7 +895,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Set the number of seconds after elevation or last showing the password that the password will be shown (Max 45 seconds). This only works if 'User Elevate Admin' is enabled.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://github.com/Jigsaw24/Elevate24/blob/main/Documentation/Elevate24%20-%20Configuration%20Keys.md#secondary-account-configuration</string>
+			<string>https://docs.jigsaw24.com/Elevate24/Documentation/Elevate24%20Configuration/5%20Elevate24%20-%20Secondary%20Account.html#secondary-account-configuration</string>
 			<key>pfm_name</key>
 			<string>showAdminPasswordGrace</string>
 			<key>pfm_range_max</key>
@@ -928,6 +917,6 @@ During a profile replacement, the system updates payloads with the same 'Payload
 	<key>pfm_unique</key>
 	<true/>
 	<key>pfm_version</key>
-	<integer>2</integer>
+	<integer>4</integer>
 </dict>
 </plist>
