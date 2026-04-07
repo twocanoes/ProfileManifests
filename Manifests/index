@@ -7,11 +7,11 @@
 		<key>.GlobalPreferences</key>
 		<dict>
 			<key>modified</key>
-			<date>2025-08-15T19:32:34Z</date>
+			<date>2026-03-25T16:49:34Z</date>
 			<key>path</key>
 			<string>Manifests/ManagedPreferencesApple/com.apple.GlobalPreferences.plist</string>
 			<key>version</key>
-			<integer>8</integer>
+			<integer>9</integer>
 		</dict>
 		<key>com.apple.AdLib</key>
 		<dict>
@@ -2463,6 +2463,6 @@
 		</dict>
 	</dict>
 	<key>date</key>
-	<date>2026-03-30T10:44:56Z</date>
+	<date>2026-04-07T23:56:05Z</date>
 </dict>
 </plist>
