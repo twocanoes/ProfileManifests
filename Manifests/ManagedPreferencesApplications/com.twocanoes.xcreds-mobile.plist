@@ -280,6 +280,21 @@ Note that Google does not support the offline_access scope so instead use the pr
 			<key>pfm_type</key>
 			<string>string</string>
 		</dict>
+        <dict>
+            <key>pfm_default</key>
+            <false/>
+            <key>pfm_description</key>
+            <string>When using Google IdP, a refresh token may need be requested in a non-standard way.</string>
+            <key>pfm_documentation_url</key>
+            <string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
+            <key>pfm_name</key>
+            <string>shouldSetGoogleAccessTypeToOffline</string>
+            <key>pfm_title</key>
+            <string>Request Google Refresh Token</string>
+            <key>pfm_type</key>
+            <string>boolean</string>
+        </dict>
+
 		<dict>
 			<key>pfm_app_min</key>
 			<string>5.9</string>
@@ -323,20 +338,6 @@ Note that Google does not support the offline_access scope so instead use the pr
 			<string>shouldExitOnSuccessfulAuth</string>
 			<key>pfm_title</key>
 			<string>Should Exit On Successful Auth</string>
-			<key>pfm_type</key>
-			<string>boolean</string>
-		</dict>
-		<dict>
-			<key>pfm_default</key>
-			<true/>
-			<key>pfm_description</key>
-			<string>Show Configure WiFi button in XCreds Login.</string>
-			<key>pfm_documentation_url</key>
-			<string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
-			<key>pfm_name</key>
-			<string>shouldShowConfigureWifiButton</string>
-			<key>pfm_title</key>
-			<string>Show Configure WiFi</string>
 			<key>pfm_type</key>
 			<string>boolean</string>
 		</dict>
