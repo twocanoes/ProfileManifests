@@ -145,7 +145,7 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_app_min</key>
 			<string>5.1</string>
 			<key>pfm_default</key>
-			<true/>
+			<false/>
 			<key>pfm_description</key>
 			<string>Show the system info popover as active when first starting</string>
 			<key>pfm_documentation_url</key>
@@ -200,38 +200,6 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>integer</string>
 		</dict>
 		<dict>
-			<key>pfm_app_min</key>
-			<string>4.0</string>
-			<key>pfm_default</key>
-			<string>Please Wait....</string>
-			<key>pfm_description</key>
-			<string>When no network connection or a profile is not defined, this title is shown in an HTML view to the user when cloud login is configured.</string>
-			<key>pfm_documentation_url</key>
-			<string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
-			<key>pfm_name</key>
-			<string>loadPageTitle</string>
-			<key>pfm_title</key>
-			<string>LoadPage Title</string>
-			<key>pfm_type</key>
-			<string>string</string>
-		</dict>
-		<dict>
-			<key>pfm_app_min</key>
-			<string>4.0</string>
-			<key>pfm_default</key>
-			<string>(or try connecting to network or check preferences)</string>
-			<key>pfm_description</key>
-			<string>When no network connection or a profile is not defined, this text is shown in an HTML view to the user when cloud login is configured.</string>
-			<key>pfm_documentation_url</key>
-			<string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
-			<key>pfm_name</key>
-			<string>loadPageInfo</string>
-			<key>pfm_title</key>
-			<string>LoadPage Info</string>
-			<key>pfm_type</key>
-			<string>string</string>
-		</dict>
-		<dict>
 			<key>pfm_description</key>
 			<string>URL to an image to show in the background while logging in. Default value: file:///System/Library/Desktop Pictures/Monterey Graphic.heic.</string>
 			<key>pfm_documentation_url</key>
@@ -280,21 +248,20 @@ Note that Google does not support the offline_access scope so instead use the pr
 			<key>pfm_type</key>
 			<string>string</string>
 		</dict>
-        <dict>
-            <key>pfm_default</key>
-            <false/>
-            <key>pfm_description</key>
-            <string>When using Google IdP, a refresh token may need be requested in a non-standard way.</string>
-            <key>pfm_documentation_url</key>
-            <string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
-            <key>pfm_name</key>
-            <string>shouldSetGoogleAccessTypeToOffline</string>
-            <key>pfm_title</key>
-            <string>Request Google Refresh Token</string>
-            <key>pfm_type</key>
-            <string>boolean</string>
-        </dict>
-
+		<dict>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>When using Google IdP, a refresh token may need be requested in a non-standard way.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
+			<key>pfm_name</key>
+			<string>shouldSetGoogleAccessTypeToOffline</string>
+			<key>pfm_title</key>
+			<string>Request Google Refresh Token</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
 		<dict>
 			<key>pfm_app_min</key>
 			<string>5.9</string>
@@ -404,50 +371,50 @@ Note that Google does not support the offline_access scope so instead use the pr
 			<key>pfm_type</key>
 			<string>array</string>
 		</dict>
-        <dict>
-            <key>pfm_app_min</key>
-            <string>6.0</string>
-            <key>pfm_description</key>
-            <string>List of wifi ssid and passwords</string>
-            <key>pfm_name</key>
-            <string>wifiNetworks</string>
-            <key>pfm_subkeys</key>
-            <array>
-                <dict>
-                    <key>pfm_hidden</key>
-                    <string>container</string>
-                    <key>pfm_subkeys</key>
-                    <array>
-                        <dict>
-                            <key>pfm_description</key>
-                            <string>ssid</string>
-                            <key>pfm_name</key>
-                            <string>ssid</string>
-                            <key>pfm_title</key>
-                            <string>ssid</string>
-                            <key>pfm_type</key>
-                            <string>string</string>
-                        </dict>
-                        <dict>
-                            <key>pfm_description</key>
-                            <string>wifiPassword</string>
-                            <key>pfm_name</key>
-                            <string>wifiPassword</string>
-                            <key>pfm_title</key>
-                            <string>wifiPassword</string>
-                            <key>pfm_type</key>
-                            <string>string</string>
-                        </dict>
-                    </array>
-                    <key>pfm_type</key>
-                    <string>dictionary</string>
-                </dict>
-            </array>
-            <key>pfm_title</key>
-            <string>Wifi Networks</string>
-            <key>pfm_type</key>
-            <string>array</string>
-        </dict>
+		<dict>
+			<key>pfm_app_min</key>
+			<string>6.0</string>
+			<key>pfm_description</key>
+			<string>List of wifi ssid and passwords</string>
+			<key>pfm_name</key>
+			<string>wifiNetworks</string>
+			<key>pfm_subkeys</key>
+			<array>
+				<dict>
+					<key>pfm_hidden</key>
+					<string>container</string>
+					<key>pfm_subkeys</key>
+					<array>
+						<dict>
+							<key>pfm_description</key>
+							<string>ssid</string>
+							<key>pfm_name</key>
+							<string>ssid</string>
+							<key>pfm_title</key>
+							<string>ssid</string>
+							<key>pfm_type</key>
+							<string>string</string>
+						</dict>
+						<dict>
+							<key>pfm_description</key>
+							<string>wifiPassword</string>
+							<key>pfm_name</key>
+							<string>wifiPassword</string>
+							<key>pfm_title</key>
+							<string>wifiPassword</string>
+							<key>pfm_type</key>
+							<string>string</string>
+						</dict>
+					</array>
+					<key>pfm_type</key>
+					<string>dictionary</string>
+				</dict>
+			</array>
+			<key>pfm_title</key>
+			<string>Wifi Networks</string>
+			<key>pfm_type</key>
+			<string>array</string>
+		</dict>
 		<dict>
 			<key>pfm_description</key>
 			<string>Password element id of the html element that has the password. It is read by using JavaScript to get the value (for example, for Azure, the JavaScript document.getElementById(&apos;i0118&apos;).value is sent. If this default is not set, standard values for Azure and Google Cloud will be used. To find out this value, use a browser to inspect the source of the page that has the password on it. Find the id of the textfield that has the password. Fill in the password and then open the JavaScript console. Run:
@@ -461,22 +428,6 @@ changing &quot;passwordID&quot; to the correct element ID. If the value you type
 			<string>passwordElementID</string>
 			<key>pfm_title</key>
 			<string>Password Element ID</string>
-			<key>pfm_type</key>
-			<string>string</string>
-		</dict>
-		<dict>
-			<key>pfm_default</key>
-			<string>name</string>
-			<key>pfm_description</key>
-			<string>Local DS to OIDC Mapping/AD Attribute for Name. Default value: &quot;name&quot; (OIDC), &quot;userPrincipalName&quot; (AD). map_username should be set to an OIDC claim/AD Attribute for name. The macOS username will be set as the portion of this value before an @ symbol if present.</string>
-			<key>pfm_documentation_url</key>
-			<string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
-			<key>pfm_name</key>
-			<string>map_username</string>
-			<key>pfm_note</key>
-			<string>Map Username to OIDC claim/AD Attribute</string>
-			<key>pfm_title</key>
-			<string>Username OIDC Mapping/AD Attribute</string>
 			<key>pfm_type</key>
 			<string>string</string>
 		</dict>
@@ -508,44 +459,44 @@ changing &quot;passwordID&quot; to the correct element ID. If the value you type
 			<key>pfm_type</key>
 			<string>string</string>
 		</dict>
-        <dict>
-            <key>pfm_description</key>
-            <string>The Authorization token for the webhook server. The app sends the token in the HTTP Authorization header.</string>
-            <key>pfm_documentation_url</key>
-            <string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
-            <key>pfm_name</key>
-            <string>webHookAuthToken</string>
-            <key>pfm_title</key>
-            <string>Webhook Authorization Token</string>
-            <key>pfm_type</key>
-            <string>string</string>
-        </dict>
-        <dict>
-            <key>pfm_description</key>
-            <string>The serial number or identifier for the device. If available, the app sends this identifier in the webhook payload for login and logout events.</string>
-            <key>pfm_documentation_url</key>
-            <string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
-            <key>pfm_name</key>
-            <string>deviceSerial</string>
-            <key>pfm_title</key>
-            <string>Device Serial Number</string>
-            <key>pfm_type</key>
-            <string>string</string>
-        </dict>
-        <dict>
-            <key>pfm_default</key>
-            <false/>
-            <key>pfm_description</key>
-            <string>Show push notifications for authentication progress. Default value: false</string>
-            <key>pfm_documentation_url</key>
-            <string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
-            <key>pfm_name</key>
-            <string>showDebug</string>
-            <key>pfm_title</key>
-            <string>Show Debug Message</string>
-            <key>pfm_type</key>
-            <string>boolean</string>
-        </dict>
+		<dict>
+			<key>pfm_description</key>
+			<string>The Authorization token for the webhook server. The app sends the token in the HTTP Authorization header.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
+			<key>pfm_name</key>
+			<string>webHookAuthToken</string>
+			<key>pfm_title</key>
+			<string>Webhook Authorization Token</string>
+			<key>pfm_type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>pfm_description</key>
+			<string>The serial number or identifier for the device. If available, the app sends this identifier in the webhook payload for login and logout events.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
+			<key>pfm_name</key>
+			<string>deviceSerial</string>
+			<key>pfm_title</key>
+			<string>Device Serial Number</string>
+			<key>pfm_type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>Show push notifications for authentication progress. Default value: false</string>
+			<key>pfm_documentation_url</key>
+			<string>https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences</string>
+			<key>pfm_name</key>
+			<string>showDebug</string>
+			<key>pfm_title</key>
+			<string>Show Debug Message</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
 	</array>
 	<key>pfm_targets</key>
 	<array>
