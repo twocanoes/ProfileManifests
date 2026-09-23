@@ -7,13 +7,13 @@
 	<key>pfm_description</key>
 	<string>Configure settings for the Mac App Store variant of the Tailscale client.</string>
 	<key>pfm_documentation_url</key>
-	<string>https://tailscale.com/kb/1315/mdm-keys/</string>
+	<string>https://tailscale.com/docs/features/tailscale-system-policies/</string>
 	<key>pfm_domain</key>
 	<string>io.tailscale.ipn.macos</string>
 	<key>pfm_format_version</key>
 	<integer>1</integer>
 	<key>pfm_last_modified</key>
-	<date>2025-02-07T19:22:04Z</date>
+	<date>2026-09-09T11:38:15Z</date>
 	<key>pfm_platforms</key>
 	<array>
 		<string>macOS</string>
@@ -54,7 +54,7 @@
 			<key>pfm_default</key>
 			<string>io.tailscale.ipn.macos</string>
 			<key>pfm_description</key>
-			<string>The reverse-DNS-style identifier for the payload. This identifier is usually the same as the TopLevel value, with an additional appended component. This string must be unique within the profile.
+			<string>The reverse-DNS-style identifier for the payload. This identifier is usually the same as the 'TopLevel' value, with an additional appended component. This string must be unique within the profile.
 During a profile replacement, the system updates payloads with the same 'PayloadIdentifier' and 'PayloadUUID' in the old and new profiles.</string>
 			<key>pfm_description_reference</key>
 			<string>A reverse-DNS-style identifier for the specific payload. It is usually the same identifier as the root-level PayloadIdentifier value with an additional component appended.</string>
@@ -132,12 +132,82 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>string</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_name</key>
+			<string>PFC_SegmentedControl_0</string>
+			<key>pfm_range_list_titles</key>
+			<array>
+				<string>Organization</string>
+				<string>Runtime</string>
+				<string>Exit Nodes</string>
+				<string>UI</string>
+			</array>
+			<key>pfm_require</key>
+			<string>always</string>
+			<key>pfm_segments</key>
+			<dict>
+				<key>Exit Nodes</key>
+				<array>
+					<string>AdvertiseExitNode</string>
+					<string>AllowedSuggestedExitNodes</string>
+					<string>ExitNodeID</string>
+					<string>ExitNode.AllowOverride</string>
+					<string>ExitNodeAllowLANAccess</string>
+				</array>
+				<key>Organization</key>
+				<array>
+					<string>ManagedByOrganizationName</string>
+					<string>ManagedByCaption</string>
+					<string>ManagedByURL</string>
+				</array>
+				<key>Runtime</key>
+				<array>
+					<string>TailscaleStartOnLogin</string>
+					<string>AlwaysOn.Enabled</string>
+					<string>AlwaysOn.OverrideWithReason</string>
+					<string>ReconnectAfter</string>
+					<string>ForceEnabled</string>
+					<string>HideDHCP121Warnings</string>
+					<string>Tailnet</string>
+					<string>LoginURL</string>
+					<string>AuthKey</string>
+					<string>AuthBrowser.macos</string>
+					<string>Hostname</string>
+					<string>UseTailscaleDNSSettings</string>
+					<string>UseTailscaleSubnets</string>
+					<string>AllowIncomingConnections</string>
+					<string>PostureChecking</string>
+					<string>KeyExpirationNotice</string>
+					<string>IPAddressCopiedAlertSuppressed</string>
+				</array>
+				<key>UI</key>
+				<array>
+					<string>AppIntroShown</string>
+					<string>CLIIntegration</string>
+					<string>ExitNodesPicker</string>
+					<string>HiddenNetworkDevices</string>
+					<string>HideDockIcon</string>
+					<string>ManageTailnetLock</string>
+					<string>OnboardingFlow</string>
+					<string>TailscaleOnboardingSeen</string>
+					<string>ResetToDefaults</string>
+					<string>RunExitNode</string>
+					<string>StartOnLoginMenuItem</string>
+					<string>TestMenu</string>
+					<string>UpdateMenu</string>
+					<string>VPNOnDemandSettings</string>
+					<string>VPNOnDemandIsUserConfigured</string>
+				</array>
+			</dict>
+			<key>pfm_type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>pfm_app_min</key>
 			<string>1.52</string>
 			<key>pfm_description</key>
 			<string>Specifies the name of the organization managing Tailscale, for instance “XYZ Corp, Inc.”. The value will be displayed in the Tailscale client, so that users can easily reach your internal support resources.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#set-your-organization-name</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-your-organization-name</string>
 			<key>pfm_name</key>
 			<string>ManagedByOrganizationName</string>
 			<key>pfm_title</key>
@@ -148,12 +218,12 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>XYZ Corp, Inc.</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.52</string>
 			<key>pfm_description</key>
 			<string>Specifies a caption to be displayed in the Managed By view in the Tailscale client. Use this string value to provide your users with information on how to reach support resources for Tailscale in your organization.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#set-an-info-message</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-an-info-message</string>
 			<key>pfm_name</key>
 			<string>ManagedByCaption</string>
 			<key>pfm_title</key>
@@ -164,12 +234,12 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>Support is available on the #tailscale channel on the company Slack.</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.52</string>
 			<key>pfm_description</key>
 			<string>Specifies a URL pointing to a help desk webpage, or other helpful resources for users in the organization. Clicking the Support button in the Tailscale UI will open this webpage.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#set-a-support-url</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-a-support-url</string>
 			<key>pfm_name</key>
 			<string>ManagedByURL</string>
 			<key>pfm_title</key>
@@ -180,12 +250,12 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>https://www.xyz-corp-example.com/helpdesk</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.46</string>
 			<key>pfm_description</key>
 			<string>The first time the application is opened on a Mac, Tailscale installs a macOS login helper. This allows Tailscale to start automatically when the user logs into their account. This boolean controls whether the login helper should start Tailscale at login time.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#automatically-start-tailscale-when-the-user-logs-in</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#automatically-start-tailscale-when-the-user-logs-in</string>
 			<key>pfm_name</key>
 			<string>TailscaleStartOnLogin</string>
 			<key>pfm_title</key>
@@ -194,40 +264,114 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>boolean</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
+			<string>1.84</string>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>Prevents users from disconnecting from the tailnet or exiting the client. When this policy is enabled, you can also enable AlwaysOn.OverrideWithReason to require a reason for disconnecting, and ReconnectAfter to set how long the client can stay disconnected.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-tailscale-to-always-be-connected</string>
+			<key>pfm_name</key>
+			<string>AlwaysOn.Enabled</string>
+			<key>pfm_note</key>
+			<string>Replaces the deprecated ForceEnabled policy. Prefer this key for new deployments.</string>
+			<key>pfm_title</key>
+			<string>Keep Tailscale always connected</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_app_min</key>
+			<string>1.84</string>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>Requires users to submit a reason when disconnecting the Tailscale client. User-provided reasons display in the Configuration logs page of the admin console. On macOS, a user can provide a reason in the client UI dialog or with the CLI command tailscale down --reason "DNS issues".</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-a-required-reason-for-disconnection</string>
+			<key>pfm_exclude</key>
+			<array>
+				<dict>
+					<key>pfm_target_conditions</key>
+					<array>
+						<dict>
+							<key>pfm_n_range_list</key>
+							<array>
+								<true/>
+							</array>
+							<key>pfm_target</key>
+							<string>AlwaysOn.Enabled</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>pfm_name</key>
+			<string>AlwaysOn.OverrideWithReason</string>
+			<key>pfm_title</key>
+			<string>Require a reason for disconnection</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_app_min</key>
+			<string>1.86</string>
+			<key>pfm_description</key>
+			<string>Sets how long the client can remain disconnected from the tailnet before automatically reconnecting. Use a Go-style duration string, for example 24h or 5h25m30s. An empty string or a zero duration disables automatic reconnection. Can be used with or without AlwaysOn.Enabled.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-a-reconnection-timer</string>
+			<key>pfm_name</key>
+			<string>ReconnectAfter</string>
+			<key>pfm_title</key>
+			<string>Reconnection timer</string>
+			<key>pfm_type</key>
+			<string>string</string>
+			<key>pfm_value_placeholder</key>
+			<string>1h</string>
+		</dict>
+		<dict>
+			<key>pfm_app_deprecated</key>
+			<string>1.84</string>
+			<key>pfm_app_min</key>
 			<string>1.52</string>
+			<key>pfm_default</key>
+			<false/>
 			<key>pfm_description</key>
 			<string>When set to true, this boolean instructs Tailscale to always be connected and actively monitor the tunnel state for disconnections. The Disconnect toggle will be disabled, to prevent users from disabling the VPN themselves. An attempt to disconnect will present a banner informing the user the organization’s policy prevents Tailscale from being disconnected. If the client detects the VPN tunnel is down because the Tailscale VPN process was terminated, Tailscale will automatically restart it and reconnect. You might want to use this policy together with an always-on VPN configuration profile.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#force-tailscale-to-always-be-running</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#force-tailscale-to-always-be-running</string>
 			<key>pfm_name</key>
 			<string>ForceEnabled</string>
+			<key>pfm_note</key>
+			<string>Deprecated in Tailscale 1.84. This policy continues to work, but AlwaysOn.Enabled is recommended instead.</string>
 			<key>pfm_title</key>
 			<string>Force Tailscale to always be running</string>
 			<key>pfm_type</key>
 			<string>boolean</string>
 		</dict>
-        <dict>
-            <key>pfm_app_min</key>
-            <string>1.68</string>
-            <key>pfm_description</key>
-            <string>By default, Tailscale v1.68 and later detect when DHCP Option 121 is being used, and the client will display a warning to the user in the UI when usage of this option is detected. You may set the HideDHCP121Warnings system policy to true to hide such warnings if you have a legitimate need to use Option 121.</string>
-            <key>pfm_documentation_url</key>
-            <string>https://tailscale.com/kb/1315/mdm-keys#suppress-dhcp-option-121-warnings</string>
-            <key>pfm_name</key>
-            <string>HideDHCP121Warnings</string>
-            <key>pfm_title</key>
-            <string>Suppress DHCP Option 121 warnings</string>
-            <key>pfm_type</key>
-            <string>boolean</string>
-        </dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
+			<string>1.68</string>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>By default, Tailscale v1.68 and later detect when DHCP Option 121 is being used, and the client will display a warning to the user in the UI when usage of this option is detected. You may set the HideDHCP121Warnings system policy to true to hide such warnings if you have a legitimate need to use Option 121.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#suppress-dhcp-option-121-warnings</string>
+			<key>pfm_name</key>
+			<string>HideDHCP121Warnings</string>
+			<key>pfm_title</key>
+			<string>Suppress DHCP Option 121 warnings</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_app_min</key>
 			<string>1.52</string>
 			<key>pfm_description</key>
-			<string>Specify a tailnet, and its identity provider will be used on the login page. If the policy value is prefixed with "required:"", Tailscale will force that identity provider to be used and won’t allow logging in with anything else.</string>
+			<string>Specifies one or more tailnets to suggest or require during device registration. Set to a comma-separated list of tailnet IDs or organization IDs such as T123456CNTRL,o123456CNTRL. Prefix the value with required: to require one of those values and disallow registration in any other tailnet.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#set-a-suggested-or-required-tailnet</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-a-suggested-or-required-tailnet</string>
 			<key>pfm_name</key>
 			<string>Tailnet</string>
 			<key>pfm_title</key>
@@ -235,15 +379,15 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_type</key>
 			<string>string</string>
 			<key>pfm_value_placeholder</key>
-			<string>required:example.com</string>
+			<string>required:T123456CNTRL</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.38.1</string>
 			<key>pfm_description</key>
 			<string>The LoginURL policy can be used to specify a custom control server URL. This should not be changed unless you are not using the standard Tailscale server. Use this policy if you’re deploying your own server, such as Headscale.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#set-a-custom-control-server-url</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-a-custom-control-server-url</string>
 			<key>pfm_name</key>
 			<string>LoginURL</string>
 			<key>pfm_title</key>
@@ -255,25 +399,150 @@ A profile can consist of payloads with different version numbers. For example, c
 		</dict>
 		<dict>
 			<key>pfm_app_min</key>
+			<string>1.74</string>
+			<key>pfm_description</key>
+			<string>Specifies an auth key used to authenticate managed devices without user interaction. Clients automatically try to use the auth key when launched unless already logged in. Use a one-off auth key tagged for the device, with access control policies that grant only necessary access.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-an-auth-key</string>
+			<key>pfm_name</key>
+			<string>AuthKey</string>
+			<key>pfm_note</key>
+			<string>Storing authentication keys in MDM poses a significant security risk. If the MDM is compromised, an attacker could use the keys to join the tailnet. Encrypt the profile if possible, and revoke the key if you suspect compromise.</string>
+			<key>pfm_sensitive</key>
+			<true/>
+			<key>pfm_title</key>
+			<string>Auth key</string>
+			<key>pfm_type</key>
+			<string>string</string>
+			<key>pfm_value_placeholder</key>
+			<string>tskey-auth-...</string>
+		</dict>
+		<dict>
+			<key>pfm_app_min</key>
+			<string>1.94</string>
+			<key>pfm_description</key>
+			<string>Controls the browser used to open authentication URLs. Set this to the bundle identifier of the preferred browser. If the specified bundle is not present, the user's default system browser is used.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-a-custom-browser-for-authentication</string>
+			<key>pfm_name</key>
+			<string>AuthBrowser.macos</string>
+			<key>pfm_title</key>
+			<string>Custom browser for authentication</string>
+			<key>pfm_type</key>
+			<string>string</string>
+			<key>pfm_value_placeholder</key>
+			<string>com.apple.Safari</string>
+		</dict>
+		<dict>
+			<key>pfm_app_min</key>
 			<string>1.56</string>
 			<key>pfm_description</key>
-			<string>Forces the Tailscale client to always use the given exit node. This can be useful if you wish to route all Internet traffic through a node for inspection or logging purposes. Users won't be able to disable or choose another exit node when this policy is active. A message will be displayed in the client UI informing users about this restriction. The value for this key should be the ID of an exit node device. You can find the ID for any device in your tailnet by looking at the Machines page of the admin console, or by using the Tailscale API. Note that if a forced exit node goes offline, Internet connectivity will be unavailable on client devices until the exit node comes back online.</string>
+			<string>Forces the Tailscale client to always use the given exit node. This can be useful if you wish to route all Internet traffic through a node for inspection or logging purposes. Users won't be able to disable or choose another exit node when this policy is active unless ExitNode.AllowOverride is also enabled. The value should be the ID of an exit node device, or auto:any to require any regionally-routed exit node. You can optionally restrict permitted nodes with AllowedSuggestedExitNodes. If a forced exit node goes offline, Internet connectivity will be unavailable until it returns.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#force-an-exit-node-to-always-be-used</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#force-an-exit-node-to-always-be-used</string>
 			<key>pfm_name</key>
 			<string>ExitNodeID</string>
 			<key>pfm_title</key>
 			<string>Forced Exit Node ID</string>
 			<key>pfm_type</key>
 			<string>string</string>
+			<key>pfm_value_placeholder</key>
+			<string>auto:any</string>
+		</dict>
+		<dict>
+			<key>pfm_app_min</key>
+			<string>1.88</string>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>Lets users select a different exit node when ExitNodeID is set to auto:any, which requires the use of an exit node. It does not allow disabling exit node usage entirely.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-a-different-exit-node-when-forced</string>
+			<key>pfm_exclude</key>
+			<array>
+				<dict>
+					<key>pfm_target_conditions</key>
+					<array>
+						<dict>
+							<key>pfm_n_range_list</key>
+							<array>
+								<string>auto:any</string>
+							</array>
+							<key>pfm_target</key>
+							<string>ExitNodeID</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>pfm_name</key>
+			<string>ExitNode.AllowOverride</string>
+			<key>pfm_title</key>
+			<string>Allow a different exit node when forced</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_app_min</key>
+			<string>1.70</string>
+			<key>pfm_description</key>
+			<string>Controls which exit nodes are recommended in the Tailscale client and through tailscale exit-node suggest. When ExitNodeID is set to auto:any, this list specifies the allowed regionally-routed exit nodes. If unset, all exit nodes are allowed. If set but empty, no exit nodes are allowed. Other exit nodes not specified by this policy can still be used, but they will not be recommended.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#suggest-allowed-forced-exit-nodes</string>
+			<key>pfm_name</key>
+			<string>AllowedSuggestedExitNodes</string>
+			<key>pfm_subkeys</key>
+			<array>
+				<dict>
+					<key>pfm_description</key>
+					<string>The ID of an exit node device. You can find device IDs on the Machines page of the admin console or by using the Tailscale API.</string>
+					<key>pfm_title</key>
+					<string>Exit Node ID</string>
+					<key>pfm_type</key>
+					<string>string</string>
+				</dict>
+			</array>
+			<key>pfm_title</key>
+			<string>Allowed suggested exit nodes</string>
+			<key>pfm_type</key>
+			<string>array</string>
+		</dict>
+		<dict>
+			<key>pfm_app_min</key>
+			<string>1.56</string>
+			<key>pfm_default</key>
+			<string>user-decides</string>
+			<key>pfm_description</key>
+			<string>Controls whether the device advertises itself as an exit node for use by other users and their devices.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#advertise-exit-node</string>
+			<key>pfm_name</key>
+			<string>AdvertiseExitNode</string>
+			<key>pfm_range_list</key>
+			<array>
+				<string>always</string>
+				<string>never</string>
+				<string>user-decides</string>
+			</array>
+			<key>pfm_range_list_titles</key>
+			<array>
+				<string>Always</string>
+				<string>Never</string>
+				<string>User Decides</string>
+			</array>
+			<key>pfm_title</key>
+			<string>Advertise as exit node</string>
+			<key>pfm_type</key>
+			<string>string</string>
 		</dict>
 		<dict>
 			<key>pfm_app_min</key>
 			<string>1.58</string>
+			<key>pfm_default</key>
+			<string>24h</string>
 			<key>pfm_description</key>
 			<string>The KeyExpirationNotice policy controls how long before key expiry should a notice be displayed. The default is 24 hours ("24h"). Use a Go-style Duration for this policy value, for instance "24h" or "5h25m30s".</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys#set-the-key-expiration-notice-period</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-the-key-expiration-notice-period</string>
 			<key>pfm_name</key>
 			<string>KeyExpirationNotice</string>
 			<key>pfm_title</key>
@@ -289,7 +558,7 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_description</key>
 			<string>Allow Local Network Access determines whether users can still access devices on the local network while using an exit node.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#toggle-local-network-access-when-an-exit-node-is-in-use</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#toggle-local-network-access-when-an-exit-node-is-in-use</string>
 			<key>pfm_name</key>
 			<string>ExitNodeAllowLANAccess</string>
 			<key>pfm_range_list</key>
@@ -317,7 +586,7 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_description</key>
 			<string>Determines whether the client accepts subnets advertised by other nodes in your tailnet.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#set-whether-the-device-accepts-tailscale-subnets</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-whether-the-device-accepts-tailscale-subnets</string>
 			<key>pfm_name</key>
 			<string>UseTailscaleSubnets</string>
 			<key>pfm_range_list</key>
@@ -338,12 +607,12 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>string</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.80</string>
 			<key>pfm_description</key>
 			<string>The Hostname policy allows IT administrators to override the hostname configured in the operating system and reported to the coordination server. This can be particularly useful on mobile devices, where the hostname provided by the operating system usually only contains the device's manufacturer name and model.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys#set-whether-device-hostnames-can-be-modified</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-whether-device-hostnames-can-be-modified</string>
 			<key>pfm_name</key>
 			<string>Hostname</string>
 			<key>pfm_title</key>
@@ -361,7 +630,7 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_description</key>
 			<string>Determines whether to apply the DNS configuration provided by the coordination server when the tunnel is connected.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#set-whether-the-device-uses-tailscale-dns-settings</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-whether-the-device-uses-tailscale-dns-settings</string>
 			<key>pfm_name</key>
 			<string>UseTailscaleDNSSettings</string>
 			<key>pfm_range_list</key>
@@ -389,7 +658,7 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_description</key>
 			<string>Determines whether Tailscale should allow incoming connections to the device.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#set-whether-to-allow-incoming-connections</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#set-whether-to-allow-incoming-connections</string>
 			<key>pfm_name</key>
 			<string>AllowIncomingConnections</string>
 			<key>pfm_range_list</key>
@@ -417,7 +686,7 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_description</key>
 			<string>Enables gathering of device posture data.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#enable-gathering-device-posture-data</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#enable-gathering-device-posture-data</string>
 			<key>pfm_name</key>
 			<string>PostureChecking</string>
 			<key>pfm_range_list</key>
@@ -438,14 +707,14 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>string</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.50</string>
 			<key>pfm_default</key>
 			<string>show</string>
 			<key>pfm_description</key>
 			<string>Shows or hides all UI items to choose an exit node in the Tailscale client.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#hide-the-exit-node-picker</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#hide-the-exit-node-picker</string>
 			<key>pfm_name</key>
 			<string>ExitNodesPicker</string>
 			<key>pfm_range_list</key>
@@ -464,14 +733,14 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>string</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
-			<string>1.52</string>
+			<key>pfm_app_min</key>
+			<string>1.50</string>
 			<key>pfm_default</key>
 			<string>show</string>
 			<key>pfm_description</key>
 			<string>Shows or hides the "Manage Tailnet lock" menu item.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#hide-the-tailnet-lock-settings</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#hide-the-tailnet-lock-settings</string>
 			<key>pfm_name</key>
 			<string>ManageTailnetLock</string>
 			<key>pfm_range_list</key>
@@ -490,14 +759,14 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>string</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.50</string>
 			<key>pfm_default</key>
 			<string>show</string>
 			<key>pfm_description</key>
 			<string>Shows or hides the "Reset to Defaults" menu item.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#hide-the-reset-to-defaults-menu-item</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#hide-the-reset-to-defaults-menu-item</string>
 			<key>pfm_name</key>
 			<string>ResetToDefaults</string>
 			<key>pfm_range_list</key>
@@ -516,14 +785,14 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>string</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.50</string>
 			<key>pfm_default</key>
 			<string>show</string>
 			<key>pfm_description</key>
 			<string>Shows or hides the "Run as Exit Node" menu item, controlling the user's ability to toggle this option.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#hide-the-run-as-exit-node-menu-item</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#hide-the-run-as-exit-node-menu-item</string>
 			<key>pfm_name</key>
 			<string>RunExitNode</string>
 			<key>pfm_range_list</key>
@@ -542,14 +811,14 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>string</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.50</string>
 			<key>pfm_default</key>
 			<string>show</string>
 			<key>pfm_description</key>
 			<string>Shows or hides the "Start on Login" menu item, controlling the user's ability to toggle this option.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#hide-the-start-on-login-menu-item</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#hide-the-start-on-login-menu-item</string>
 			<key>pfm_name</key>
 			<string>StartOnLoginMenuItem</string>
 			<key>pfm_range_list</key>
@@ -568,14 +837,14 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>string</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.50</string>
 			<key>pfm_default</key>
 			<string>show</string>
 			<key>pfm_description</key>
 			<string>Shows or hides the debug menu in the Tailscale client. On macOS, this system policy will also hide any information displayed when holding down the Option key while clicking on the Tailscale menubar item.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#hide-the-debug-menu</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#hide-the-debug-menu</string>
 			<key>pfm_name</key>
 			<string>TestMenu</string>
 			<key>pfm_range_list</key>
@@ -601,7 +870,7 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_description</key>
 			<string>Shows or hides the "Update Available" menu item which appears when a newer version of Tailscale is available.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#hide-the-update-menu</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#hide-the-update-menu</string>
 			<key>pfm_name</key>
 			<string>UpdateMenu</string>
 			<key>pfm_range_list</key>
@@ -620,12 +889,12 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>string</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.52</string>
 			<key>pfm_description</key>
 			<string>Can be used to hide one or more categories of network devices normally displayed in the Tailscale client. Administrators can choose to hide: devices owned by the current user; devices owned by other users; tagged devices. If all three options are chosen, the "Network Devices" menu item disappears entirely and users aren’t able to see any device on the tailnet.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#hide-network-devices</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#hide-network-devices</string>
 			<key>pfm_name</key>
 			<string>HiddenNetworkDevices</string>
 			<key>pfm_subkeys</key>
@@ -653,12 +922,14 @@ A profile can consist of payloads with different version numbers. For example, c
 			<string>array</string>
 		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
 			<string>1.50</string>
+			<key>pfm_default</key>
+			<false/>
 			<key>pfm_description</key>
 			<string>When you use the Tailscale menu bar item to copy to the Clipboard the IP address of a device, a notification displaying the IP address is presented. Use this to suppress this Copied IP address to clipboard notification.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#suppress-ip-address-copied-notifications</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#suppress-ip-address-copied-notifications</string>
 			<key>pfm_name</key>
 			<string>IPAddressCopiedAlertSuppressed</string>
 			<key>pfm_title</key>
@@ -666,20 +937,50 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_type</key>
 			<string>boolean</string>
 		</dict>
-        <dict>
+		<dict>
+			<key>pfm_app_min</key>
+			<string>1.96</string>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>Set to true to suppress the "Welcome to the Tailscale app" modal window introduction that appears when you log in to Tailscale on a device for the first time.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#suppress-the-app-window-intro-flow</string>
+			<key>pfm_name</key>
+			<string>AppIntroShown</string>
+			<key>pfm_title</key>
+			<string>Suppress the app window intro flow</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_app_min</key>
+			<string>1.94</string>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>The Tailscale dock icon on macOS appears whenever an application window exists. By default, Tailscale leaves an icon in the dock to support quickly reopening the main application window. Set this to true to hide the dock icon after all windows close.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#hide-the-macos-dock-icon-after-all-windows-close</string>
+			<key>pfm_name</key>
+			<string>HideDockIcon</string>
+			<key>pfm_title</key>
+			<string>Hide the macOS dock icon after all windows close</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
 			<key>pfm_app_min</key>
 			<string>1.68</string>
-            <key>pfm_default</key>
-            <string>hide</string>
+			<key>pfm_default</key>
+			<string>hide</string>
 			<key>pfm_description</key>
 			<string>When set to hide, the user will not be able to install the CLI helper, and will instead be told to contact their administrator.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys#hide-the-cli-integration-installer</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#hide-the-cli-integration-installer</string>
 			<key>pfm_name</key>
 			<string>CLIIntegration</string>
-			<key>pfm_title</key>
-			<string>Hide the CLI integration installer</string>
-            <key>pfm_range_list</key>
+			<key>pfm_range_list</key>
 			<array>
 				<string>show</string>
 				<string>hide</string>
@@ -689,18 +990,54 @@ A profile can consist of payloads with different version numbers. For example, c
 				<string>Show</string>
 				<string>Hide</string>
 			</array>
+			<key>pfm_title</key>
+			<string>Hide the CLI integration installer</string>
 			<key>pfm_type</key>
 			<string>string</string>
-        </dict>
+		</dict>
 		<dict>
-            <key>pfm_app_min</key>
+			<key>pfm_app_min</key>
+			<string>1.86</string>
+			<key>pfm_default</key>
+			<string>show</string>
+			<key>pfm_description</key>
+			<string>Shows or hides the client onboarding flow that appears the first time Tailscale starts on a device. Hide it if end-users are already familiar with the product. On macOS, typically deploy a VPN configuration profile when hiding the onboarding flow.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#suppress-the-first-launch-onboarding-flow</string>
+			<key>pfm_name</key>
+			<string>OnboardingFlow</string>
+			<key>pfm_note</key>
+			<string>Replaces the deprecated TailscaleOnboardingSeen policy.</string>
+			<key>pfm_range_list</key>
+			<array>
+				<string>show</string>
+				<string>hide</string>
+			</array>
+			<key>pfm_range_list_titles</key>
+			<array>
+				<string>Show</string>
+				<string>Hide</string>
+			</array>
+			<key>pfm_title</key>
+			<string>Show/hide the first launch onboarding flow</string>
+			<key>pfm_type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>pfm_app_deprecated</key>
+			<string>1.86</string>
+			<key>pfm_app_min</key>
 			<string>1.46</string>
+			<key>pfm_default</key>
+			<false/>
 			<key>pfm_description</key>
 			<string>When you start Tailscale on your Mac for the first time, an onboarding flow is presented. It explains the Tailscale privacy policy, and guides the user in setting up the VPN configuration on their Mac. You might want to disable this onboarding flow if you are going to automatically set up the VPN configuration on the system by using a configuration profile. In order to do so, this boolean suppresses the onboarding flow when Tailscale launches for the first time and the value is set to true.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys/#suppress-the-first-launch-onboarding-flow</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#suppress-the-first-launch-onboarding-flow</string>
 			<key>pfm_name</key>
 			<string>TailscaleOnboardingSeen</string>
+			<key>pfm_note</key>
+			<string>Deprecated in Tailscale 1.86. This policy continues to work, but OnboardingFlow is recommended instead. OnboardingFlow uses show/hide rather than a boolean.</string>
 			<key>pfm_title</key>
 			<string>Suppress the first launch onboarding flow</string>
 			<key>pfm_type</key>
@@ -714,7 +1051,7 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_description</key>
 			<string>The VPNOnDemandSettings policy can be used to show or hide the VPN On Demand menu item. You might want to use this setting if you're deploying your own VPN configuration profile for Tailscale, and you don't want your users to interact with the on-demand VPN configuration you set up for them.</string>
 			<key>pfm_documentation_url</key>
-			<string>https://tailscale.com/kb/1315/mdm-keys#hide-the-vpn-on-demand-menu-item</string>
+			<string>https://tailscale.com/docs/features/tailscale-system-policies#hide-the-vpn-on-demand-menu-item</string>
 			<key>pfm_name</key>
 			<string>VPNOnDemandSettings</string>
 			<key>pfm_range_list</key>
@@ -732,6 +1069,22 @@ A profile can consist of payloads with different version numbers. For example, c
 			<key>pfm_type</key>
 			<string>string</string>
 		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>Instructs Tailscale not to modify the VPN On Demand configuration, so that MDM-deployed OnDemandRules remain in effect. Deploy this together with VPNOnDemandSettings set to hide when providing your own VPN On Demand rules.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://tailscale.com/docs/integrations/mdm/mac#configure-the-required-system-policy-keys</string>
+			<key>pfm_name</key>
+			<string>VPNOnDemandIsUserConfigured</string>
+			<key>pfm_note</key>
+			<string>Misconfigured VPN On Demand rules may prevent users from connecting to their tailnet. If AlwaysOn behavior is desired, prefer AlwaysOn.Enabled, AlwaysOn.OverrideWithReason, and ReconnectAfter instead of custom On Demand rules.</string>
+			<key>pfm_title</key>
+			<string>VPN On Demand is user-configured</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
 	</array>
 	<key>pfm_targets</key>
 	<array>
@@ -743,6 +1096,6 @@ A profile can consist of payloads with different version numbers. For example, c
 	<key>pfm_unique</key>
 	<false/>
 	<key>pfm_version</key>
-	<integer>5</integer>
+	<integer>6</integer>
 </dict>
 </plist>

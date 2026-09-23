@@ -19,9 +19,10 @@ This payload is supported only in iOS 6.0 and later.</string>
 	<key>pfm_ios_min</key>
 	<string>6.0</string>
 	<key>pfm_last_modified</key>
-	<date>2025-09-17T09:38:09Z</date>
+	<date>2026-09-17T18:53:46Z</date>
 	<key>pfm_note</key>
-	<string>You canʼt update any app while the device is locked in Single App Mode. You need to exit Single App Mode long enough to update apps as needed. During that time you should restrict the visible apps as much as possible, except for Settings and Phone and any other apps that cannot be denylisted.</string>
+	<string>With an app lock profile, the device locks to the specified app until removal of the profile. The device returns to the app automatically upon wake or restart.
+Only use an app lock payload after installing the target app.</string>
 	<key>pfm_platforms</key>
 	<array>
 		<string>iOS</string>
@@ -60,7 +61,6 @@ This payload is supported only in iOS 6.0 and later.</string>
 			<string>com.apple.app.lock</string>
 			<key>pfm_description</key>
 			<string>The reverse-DNS-style identifier for the payload. This identifier is usually the same as the 'TopLevel' value, with an additional appended component. This string must be unique within the profile.
-
 During a profile replacement, the system updates payloads with the same 'PayloadIdentifier' and 'PayloadUUID' in the old and new profiles.</string>
 			<key>pfm_name</key>
 			<string>PayloadIdentifier</string>
@@ -90,7 +90,6 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<string></string>
 			<key>pfm_description</key>
 			<string>The globally unique identifier for the payload. The actual content is unimportant, but must be globally unique. In macOS, use 'uuidgen' to generate UUIDs.
-
 During a profile replacement, the system updates payloads with the same 'PayloadIdentifier' and 'PayloadUUID' in the old and new profiles.</string>
 			<key>pfm_format</key>
 			<string>^[0-9A-Za-z]{8}-[0-9A-Za-z]{4}-[0-9A-Za-z]{4}-[0-9A-Za-z]{4}-[0-9A-Za-z]{12}$</string>
@@ -166,10 +165,12 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system disables the touch screen. In tvOS, it disables the touch surface on the Apple TV Remote.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>DisableTouch</string>
 							<key>pfm_title</key>
-							<string>Disable Touch</string>
+							<string>Disable touch</string>
 							<key>pfm_tvos_min</key>
 							<string>10.2</string>
 							<key>pfm_type</key>
@@ -180,6 +181,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system disables device rotation sensing.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>DisableDeviceRotation</string>
 							<key>pfm_platforms</key>
@@ -187,7 +190,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 								<string>iOS</string>
 							</array>
 							<key>pfm_title</key>
-							<string>Disable Device Rotation</string>
+							<string>Disable device rotation</string>
 							<key>pfm_type</key>
 							<string>boolean</string>
 						</dict>
@@ -196,6 +199,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system disables the volume buttons.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>DisableVolumeButtons</string>
 							<key>pfm_platforms</key>
@@ -203,7 +208,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 								<string>iOS</string>
 							</array>
 							<key>pfm_title</key>
-							<string>Disable Volume Buttons</string>
+							<string>Disable volume buttons</string>
 							<key>pfm_type</key>
 							<string>boolean</string>
 						</dict>
@@ -212,6 +217,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system disables the ringer switch. When disabled, the ringer behavior depends on what position the switch was in when it was first disabled.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>DisableRingerSwitch</string>
 							<key>pfm_platforms</key>
@@ -219,7 +226,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 								<string>iOS</string>
 							</array>
 							<key>pfm_title</key>
-							<string>Disable Ringer Switch</string>
+							<string>Disable ringer switch</string>
 							<key>pfm_type</key>
 							<string>boolean</string>
 						</dict>
@@ -228,6 +235,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system disables the sleep/wake button.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>DisableSleepWakeButton</string>
 							<key>pfm_platforms</key>
@@ -235,7 +244,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 								<string>iOS</string>
 							</array>
 							<key>pfm_title</key>
-							<string>Disable Sleep Wake Button</string>
+							<string>Disable sleep wake button</string>
 							<key>pfm_type</key>
 							<string>boolean</string>
 						</dict>
@@ -244,10 +253,12 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the device doesn't automatically go to sleep after an idle period.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>DisableAutoLock</string>
 							<key>pfm_title</key>
-							<string>Disable Auto Lock</string>
+							<string>Disable auto lock</string>
 							<key>pfm_tvos_min</key>
 							<string>10.2</string>
 							<key>pfm_type</key>
@@ -258,10 +269,12 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system enables VoiceOver.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>EnableVoiceOver</string>
 							<key>pfm_title</key>
-							<string>Enable Voice Over</string>
+							<string>Enable VoiceOver</string>
 							<key>pfm_tvos_min</key>
 							<string>10.2</string>
 							<key>pfm_type</key>
@@ -272,6 +285,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system enables Zoom.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>EnableZoom</string>
 							<key>pfm_title</key>
@@ -286,6 +301,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system enables Invert Colors.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>EnableInvertColors</string>
 							<key>pfm_title</key>
@@ -300,6 +317,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system enables AssistiveTouch.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>EnableAssistiveTouch</string>
 							<key>pfm_platforms</key>
@@ -307,7 +326,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 								<string>iOS</string>
 							</array>
 							<key>pfm_title</key>
-							<string>Enable Assistive Touch</string>
+							<string>Enable AssistiveTouch</string>
 							<key>pfm_type</key>
 							<string>boolean</string>
 						</dict>
@@ -316,6 +335,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system enables Speak Selection.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>EnableSpeakSelection</string>
 							<key>pfm_platforms</key>
@@ -332,6 +353,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system enables Mono Audio.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>EnableMonoAudio</string>
 							<key>pfm_platforms</key>
@@ -381,10 +404,12 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system allows the user to toggle VoiceOver.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>VoiceOver</string>
 							<key>pfm_title</key>
-							<string>Voice Over</string>
+							<string>VoiceOver</string>
 							<key>pfm_tvos_min</key>
 							<string>10.2</string>
 							<key>pfm_type</key>
@@ -395,6 +420,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system allows the user to toggle Zoom.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>Zoom</string>
 							<key>pfm_title</key>
@@ -409,6 +436,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system allows the user to toggle Invert Colors.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>InvertColors</string>
 							<key>pfm_title</key>
@@ -423,6 +452,8 @@ During a profile replacement, the system updates payloads with the same 'Payload
 							<false/>
 							<key>pfm_description</key>
 							<string>If 'true', the system allows the user to toggle AssistiveTouch.</string>
+							<key>pfm_ios_min</key>
+							<string>7.0</string>
 							<key>pfm_name</key>
 							<string>AssistiveTouch</string>
 							<key>pfm_platforms</key>
@@ -430,7 +461,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 								<string>iOS</string>
 							</array>
 							<key>pfm_title</key>
-							<string>Assistive Touch</string>
+							<string>AssistiveTouch</string>
 							<key>pfm_type</key>
 							<string>boolean</string>
 						</dict>
@@ -454,7 +485,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 						</dict>
 					</array>
 					<key>pfm_title</key>
-					<string>User Enabled Options</string>
+					<string>User enabled options</string>
 					<key>pfm_type</key>
 					<string>dictionary</string>
 				</dict>

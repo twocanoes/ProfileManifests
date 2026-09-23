@@ -7,13 +7,13 @@
 	<key>pfm_description</key>
 	<string>Zoom settings</string>
 	<key>pfm_documentation_url</key>
-	<string>https://support.zoom.us/hc/en-us/articles/115001799006-Mass-Deployment-with-Preconfigured-Settings-for-Mac</string>
+	<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0064957</string>
 	<key>pfm_domain</key>
 	<string>us.zoom.config</string>
 	<key>pfm_format_version</key>
 	<integer>1</integer>
 	<key>pfm_last_modified</key>
-	<date>2023-08-17T13:21:37Z</date>
+	<date>2026-09-04T13:20:00Z</date>
 	<key>pfm_platforms</key>
 	<array>
 		<string>macOS</string>
@@ -50,7 +50,7 @@
 			<key>pfm_default</key>
 			<string>us.zoom.config</string>
 			<key>pfm_description</key>
-			<string>The reverse-DNS-style identifier for the payload. This identifier is usually the same as the TopLevel value, with an additional appended component. This string must be unique within the profile.
+			<string>The reverse-DNS-style identifier for the payload. This identifier is usually the same as the 'TopLevel' value, with an additional appended component. This string must be unique within the profile.
 During a profile replacement, the system updates payloads with the same 'PayloadIdentifier' and 'PayloadUUID' in the old and new profiles.</string>
 			<key>pfm_name</key>
 			<string>PayloadIdentifier</string>
@@ -174,10 +174,15 @@ During a profile replacement, the system updates payloads with the same 'Payload
 					<string>DisableKeepSignedInWithGoogle</string>
 					<string>DisableKeepSignedInWithSSO</string>
 					<string>DisableLoginWithEmail</string>
+					<string>DisableLoginWithMagicCode</string>
+					<string>DisableLoginWithMicrosoft</string>
+					<string>DisableMultipleAccountsSwitch</string>
+					<string>DisableUserSignUp</string>
 					<string>EnableAlipayLogin</string>
 					<string>EnableAppleLogin</string>
 					<string>EnableCloudSwitch</string>
 					<string>EnableEmbedBrowserForSSO</string>
+					<string>EnableNewSigninUI</string>
 					<string>EnableQQLogin</string>
 					<string>EnablePhoneLogin</string>
 					<string>EnableWeChatLogin</string>
@@ -504,6 +509,66 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_default</key>
 			<false/>
 			<key>pfm_description</key>
+			<string>Users are prevented from signing in to their Zoom account with the one-time magic code option.</string>
+			<key>pfm_name</key>
+			<string>DisableLoginWithMagicCode</string>
+			<key>pfm_title</key>
+			<string>Disable Magic Code Login</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>Disable login with Microsoft.</string>
+			<key>pfm_name</key>
+			<string>DisableLoginWithMicrosoft</string>
+			<key>pfm_title</key>
+			<string>Disable Microsoft Login</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>Disable the ability for users to be signed-in to multiple accounts and easily switch between them. If disabled, users must manually sign out and then sign in to another account.</string>
+			<key>pfm_name</key>
+			<string>DisableMultipleAccountsSwitch</string>
+			<key>pfm_title</key>
+			<string>Disable Multiple Accounts Switch</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
+			<string>Disable the Sign Up option on the Zoom app, which would otherwise be displayed with Join a Meeting and Sign In options upon opening the Zoom app.</string>
+			<key>pfm_name</key>
+			<string>DisableUserSignUp</string>
+			<key>pfm_title</key>
+			<string>Disable User SignUp</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<true/>
+			<key>pfm_description</key>
+			<string>When a signed-out user opens the Zoom Workplace app, they will see the enhanced workplace interface with tabs that reflect Zoom products. Upon signing in, users will only see the products available to them.</string>
+			<key>pfm_name</key>
+			<string>EnableNewSigninUI</string>
+			<key>pfm_title</key>
+			<string>Enable New Signin UI</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_description</key>
 			<string>Require new Facebook login every time Zoom launches.</string>
 			<key>pfm_name</key>
 			<string>DisableKeepSignedInWithFacebook</string>
@@ -608,13 +673,13 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Enable auto updates through the client</string>
 			<key>pfm_documentation_url</key>
-			<string>https://support.zoom.us/hc/en-us/articles/10365151862285</string>
+			<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493</string>
 			<key>pfm_name</key>
 			<string>AU2_EnableAutoUpdate</string>
 			<key>pfm_note</key>
 			<string>This must be enabled to use any of the associated AU2 options.</string>
 			<key>pfm_title</key>
-			<string>Enable Updates</string>
+			<string>Enable Automatic Updates</string>
 			<key>pfm_type</key>
 			<string>boolean</string>
 		</dict>
@@ -626,7 +691,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Set the cadence of updates applied to the desktop client</string>
 			<key>pfm_documentation_url</key>
-			<string>https://support.zoom.us/hc/en-us/articles/10365151862285</string>
+			<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493</string>
 			<key>pfm_exclude</key>
 			<array>
 				<dict>
@@ -668,7 +733,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Show the Zoom Updates section of the General tab in client settings</string>
 			<key>pfm_documentation_url</key>
-			<string>https://support.zoom.us/hc/en-us/articles/10365151862285</string>
+			<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493</string>
 			<key>pfm_exclude</key>
 			<array>
 				<dict>
@@ -702,7 +767,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Show the Update Available banner on the Home tab of the client, when an update is available</string>
 			<key>pfm_documentation_url</key>
-			<string>https://support.zoom.us/hc/en-us/articles/10365151862285</string>
+			<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493</string>
 			<key>pfm_exclude</key>
 			<array>
 				<dict>
@@ -734,7 +799,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Prompt users to update when exiting a meeting or webinar, when an update is available</string>
 			<key>pfm_documentation_url</key>
-			<string>https://support.zoom.us/hc/en-us/articles/10365151862285</string>
+			<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493</string>
 			<key>pfm_exclude</key>
 			<array>
 				<dict>
@@ -766,7 +831,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Show notification indicating an update has been successfully installed</string>
 			<key>pfm_documentation_url</key>
-			<string>https://support.zoom.us/hc/en-us/articles/10365151862285</string>
+			<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493</string>
 			<key>pfm_exclude</key>
 			<array>
 				<dict>
@@ -798,7 +863,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Control the visibility of the Check for Updates option in the client</string>
 			<key>pfm_documentation_url</key>
-			<string>https://support.zoom.us/hc/en-us/articles/10365151862285</string>
+			<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493</string>
 			<key>pfm_exclude</key>
 			<array>
 				<dict>
@@ -828,7 +893,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Download and install the specified version if the currently installed version is below that version. Format should be the official version without spaces or parentheses</string>
 			<key>pfm_documentation_url</key>
-			<string>https://support.zoom.us/hc/en-us/articles/10365151862285</string>
+			<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493</string>
 			<key>pfm_exclude</key>
 			<array>
 				<dict>
@@ -862,7 +927,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Timeframe to download an available update version. Update is then initiated by the user through prompt, or during idle time or the specified safe upgrade period</string>
 			<key>pfm_documentation_url</key>
-			<string>https://support.zoom.us/hc/en-us/articles/10365151862285</string>
+			<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493</string>
 			<key>pfm_exclude</key>
 			<array>
 				<dict>
@@ -900,7 +965,7 @@ During a profile replacement, the system updates payloads with the same 'Payload
 			<key>pfm_description</key>
 			<string>Auto install an available update when the device is idle</string>
 			<key>pfm_documentation_url</key>
-			<string>https://support.zoom.us/hc/en-us/articles/10365151862285</string>
+			<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493</string>
 			<key>pfm_exclude</key>
 			<array>
 				<dict>
@@ -936,7 +1001,7 @@ Screen is locked or screen saver is active</string>
 			<key>pfm_description</key>
 			<string>Set to install updates within a given time period. Requires AU2_InstallAtIdleTime be enabled</string>
 			<key>pfm_documentation_url</key>
-			<string>https://support.zoom.us/hc/en-us/articles/10365151862285</string>
+			<string>https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493</string>
 			<key>pfm_exclude</key>
 			<array>
 				<dict>
@@ -976,7 +1041,7 @@ Screen is locked or screen saver is active</string>
 		</dict>
 		<dict>
 			<key>pfm_default</key>
-			<false/>
+			<true/>
 			<key>pfm_description</key>
 			<string>Allow users to check for updates through the Zoom client. If set to 'false', the 'Check for Updates' button is hidden.</string>
 			<key>pfm_name</key>
@@ -984,7 +1049,7 @@ Screen is locked or screen saver is active</string>
 			<key>pfm_note</key>
 			<string>This is not a true auto-update feature, this only allows the user to manually check for updates.</string>
 			<key>pfm_title</key>
-			<string>Enable Updates</string>
+			<string>Allow Manual Update Checks</string>
 			<key>pfm_type</key>
 			<string>boolean</string>
 		</dict>
@@ -1058,7 +1123,7 @@ Screen is locked or screen saver is active</string>
 			<key>pfm_name</key>
 			<string>SetUpdatingChannel</string>
 			<key>pfm_note</key>
-			<string>Refer to https://support.zoom.us/hc/en-us/articles/10365151862285 for managing Zoom updates in Zoom 5.10.6 and later</string>
+			<string>Refer to https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0058493 for managing Zoom updates in Zoom 5.10.6 and later</string>
 			<key>pfm_range_list</key>
 			<array>
 				<false/>
@@ -2879,6 +2944,6 @@ Audio: 8803</string>
 	<key>pfm_unique</key>
 	<true/>
 	<key>pfm_version</key>
-	<integer>6</integer>
+	<integer>7</integer>
 </dict>
 </plist>
